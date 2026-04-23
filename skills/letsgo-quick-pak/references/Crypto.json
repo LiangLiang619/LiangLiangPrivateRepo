@@ -1,0 +1,8 @@
+{
+  "EncryptionKey": {
+    "Name": "embeddedPakSigningKey",
+    "Guid": "00000000000000000000000000000000",
+    "Key": "JhNKU8vZqmXLRu0VDYpX9RP7k5dT253MJVqYge2WUy0="
+  },
+  "SecondaryEncryptionKeys": []
+}
