@@ -1,16 +1,1 @@
-# Agent Library
-
-个人 AI Agent 技能库，包含 skills、rules、prompts 和 configs。
-
-## 目录结构
-
-- `skills/` - Agent 技能（SKILL.md + 相关脚本/引用文件）
-- `rules/` - 规则文件
-- `prompts/` - Prompt 模板
-- `configs/` - 配置文件
-
-## Skills 列表
-
-| 名称 | 描述 | 来源 |
-|------|------|------|
-| letsgo-quick-pak | LetsGo/ProjectT 快速打 UE Pak 热更包 | [iWiki](https://iwiki.woa.com/p/4020010290) |
+"IyDwn5eC77iPIEFnZW50IExpYnJhcnkKCuS4quS6uiBBZ2VudCDmlofku7blupMg4oCUIOe7n+S4gOeuoeeQhiBydWxlc+OAgXNraWxsc+OAgXByb21wdHPjgIFjb25maWdz44CCCgojIyDnm67lvZXnu5PmnoQKClxcXAphZ2VudC1saWJyYXJ5LwrilJzilIDilIAgc2tpbGxzLyAgICAgICAgICAjIE9wZW5DbGF3IFNraWxscwrilJzilIDilIAgcnVsZXMvICAgICAgICAgICAjIEN1cnNvciAvIENsYXVkZSBydWxlcyAoLm1kYyAvIC5tZCkK4pSc4pSA4pSAIHByb21wdHMvICAgICAgICAgIyDluLjnlKggUHJvbXB0IOaooeadvwrilJTilIDilIAgY29uZmlncy8gICAgICAgICAjIEFnZW50IOmFjee9ruaWh+S7tgpcXFwKCiMjIOe0ouW8lQoK8J+TiyBOb3Rpb24g57Si5byV6KGoIOeUsSBPcGVuQ2xhdyBBSSDnu7TmiqTvvIzmlK/mjIHmjInnsbvlnosv5bel5YW3L+WcuuaZr+ajgOe0ouOAggoKIyMg5L2/55So5pa55byPCgrnm7TmjqXlkYror4kgT3BlbkNsYXcgQUnvvJoKLSDlhaXlupPvvJrmiorov5nkuKogcnVsZSDlrZjov5sgYWdlbnQtbGlicmFyeSArIOeymOi0tOWGheWuuQotIOajgOe0ou+8muacieayoeaciemAguWQiCBDdXJzb3Ig55qE5Luj56CB5a6h5p+lIHJ1bGXvvJ8KLSDojrflj5bvvJrmioogbXVsdGktc2VhcmNoLWVuZ2luZSBza2lsbCDlj5Hnu5nmiJEKCiMjIOe7n+iuoQoKLSBTa2lsbHM6IDE2IHwgUnVsZXM6IDAgfCBQcm9tcHRzOiAwIHwgQ29uZmlnczogMAoK5pyA5ZCO5pu05paw77yaMjAyNi0wNC0yMg=="
