@@ -6,86 +6,93 @@ tags:
 
 # 🧠 Skills 索引
 
-> 共 18 个 Skill · 最后更新：2026-04-24
+> 共 16 个 Skill · Notion 为主数据源 · 最后同步：2026-04-24
 
 ## 📋 全部 Skills
 
-| 名称 | 描述 | 附属文件 |
-|---|---|---|
-| [agent-knowledge](pages/agent-knowledge/SKILL.md) | "LS0tCm5hbWU6IGtub3dsZWRnZQpkZXNjcmlwdGlvbjogVW5pZmllZCBrbm9… | - |
-| [api-gateway](pages/api-gateway/SKILL.md) | "LS0tCm5hbWU6IGFwaS1nYXRld2F5CmRlc2NyaXB0aW9uOiB8CiAgQ29ubmV… | - |
-| [clawdhub](pages/clawdhub/SKILL.md) | "LS0tCm5hbWU6IGNsYXdkaHViCmRlc2NyaXB0aW9uOiBVc2UgdGhlIENsYXd… | - |
-| [excel-xlsx](pages/excel-xlsx/SKILL.md) | "LS0tCm5hbWU6IGV4Y2VsLXhsc3gKZGVzY3JpcHRpb246IENvbXByZWhlbnN… | - |
-| [file-auto-organizer](pages/file-auto-organizer/SKILL.md) | "LS0tCm5hbWU6IGZpbGUtYXV0by1vcmdhbml6ZXIKdmVyc2lvbjogMS4wLjA… | - |
-| [hita-mind-knowledge](pages/hita-mind-knowledge/SKILL.md) | "LS0tCm5hbWU6IGhpdGEtbWluZC1hbmQta25vd2xlZGdlCmRlc2NyaXB0aW9… | - |
-| [letsgo-quick-pak](pages/letsgo-quick-pak/SKILL.md) | >- | `.gitignore` / `configs` / `lua` / `README.md` / `scripts` |
-| [mcp-skill](pages/mcp-skill/SKILL.md) | "LS0tCm5hbWU6IG1jcC1za2lsbApkZXNjcmlwdGlvbjogV3JhcHMgdGhlIE1… | - |
-| [mcporter](pages/mcporter/SKILL.md) | "LS0tCm5hbWU6IG1jcG9ydGVyCmRlc2NyaXB0aW9uOiBVc2UgdGhlIG1jcG9… | - |
-| [multi-search-engine](pages/multi-search-engine/SKILL.md) | "LS0tCm5hbWU6ICJtdWx0aS1zZWFyY2gtZW5naW5lIgpkZXNjcmlwdGlvbjo… | - |
-| [nano-banana-pro](pages/nano-banana-pro/SKILL.md) | "LS0tCm5hbWU6IG5hbm8tYmFuYW5hLXBybwpkZXNjcmlwdGlvbjogR2VuZXJ… | - |
-| [notion-obsidian-sync](pages/notion-obsidian-sync/SKILL.md) | 用户说到以下意图之一就激活本 skill： | - |
-| [ontology](pages/ontology/SKILL.md) | "LS0tCm5hbWU6IG9udG9sb2d5CmRlc2NyaXB0aW9uOiBBIHR5cGVkIHZvY2F… | - |
-| [openclaw-mcp-plugin](pages/openclaw-mcp-plugin/SKILL.md) | "LS0tCm5hbWU6IG9wZW5jbGF3LW1jcC1wbHVnaW4KZGVzY3JpcHRpb246IE1… | - |
-| [powerpoint-pptx](pages/powerpoint-pptx/SKILL.md) | "LS0tCm5hbWU6IHBvd2VycG9pbnQtcHB0eApkZXNjcmlwdGlvbjogQ29tcHJ… | - |
-| [screenshot](pages/screenshot/SKILL.md) | "LS0tCm5hbWU6IHNjcmVlbnNob3QKZGVzY3JpcHRpb246IFRha2UgcmVsaWF… | - |
-| [self-improving-agent](pages/self-improving-agent/SKILL.md) | "LS0tCm5hbWU6IHNlbGYtaW1wcm92aW5nLWFnZW50CmRlc2NyaXB0aW9uOiB… | - |
-| [word-docx](pages/word-docx/SKILL.md) | "LS0tCm5hbWU6IHdvcmQtZG9jeApkZXNjcmlwdGlvbjogQ29tcHJlaGVuc2l… | - |
+| 名称 | 描述 | 适用场景 | 适用工具 | 编程语言 |
+|---|---|---|---|---|
+| [agent-knowledge](pages/agent-knowledge/SKILL.md) | 统一知识收藏和检索，支持 URL/视频/文章/论文/研究输出，Markdown 文件存储 | 知识管理 | OpenClaw | - |
+| [api-gateway](pages/api-gateway/SKILL.md) | Maton.ai OAuth 托管网关，一个 API Key 接入 Google/Notion/Slack/GitHub… | API集成 | OpenClaw | - |
+| [clawdhub](pages/clawdhub/SKILL.md) | ClawdHub CLI，搜索/安装/更新/发布 agent skills，需 npm install -g clawd… | 通用 | OpenClaw | - |
+| [excel-xlsx](pages/excel-xlsx/SKILL.md) | Excel .xlsx 工作簿专业处理，涵盖公式/日期/格式/合并单元格/跨平台兼容 | 办公文档 | OpenClaw | - |
+| [file-auto-organizer](pages/file-auto-organizer/SKILL.md) | 本地文件自动整理 Python 脚本，按类型/日期归类，支持 Windows | 文件管理 | OpenClaw | - |
+| [hita-mind-knowledge](pages/hita-mind-knowledge/SKILL.md) | AI记忆+知识双模块：8分类记忆(Mind)和L1/L2/L3三层知识库(Knowledge)，纯本地JSON存储 | 知识管理 | OpenClaw | - |
+| [mcp-skill](pages/mcp-skill/SKILL.md) | 封装 mcp.exa.ai，提供网页搜索/深度研究/公司调研/LinkedIn搜索（外部服务） | 搜索 / API集成 | OpenClaw | - |
+| [mcporter](pages/mcporter/SKILL.md) | MCP 服务器 CLI 工具，支持 list/call/auth/config/daemon/generate，需 np… | API集成 | OpenClaw | - |
+| [multi-search-engine](pages/multi-search-engine/SKILL.md) | 16引擎多搜索聚合（7国内+9国际），支持高级语法、时间过滤、WolframAlpha，无需 API Key | 搜索 | OpenClaw | - |
+| [nano-banana-pro](pages/nano-banana-pro/SKILL.md) | Google Gemini 3 Pro Image 图像生成/编辑，支持1K/2K/4K，需 GEMINI_API_KE… | 图像生成 | OpenClaw | - |
+| [ontology](pages/ontology/SKILL.md) | 类型化知识图谱，管理 Person/Project/Task/Event 等实体及关系，存储在 memory/ontol… | 知识管理 / 任务管理 | OpenClaw | - |
+| [openclaw-mcp-plugin](pages/openclaw-mcp-plugin/SKILL.md) | MCP 统一调用指南，通过 list/call 操作任意已连接的 MCP 服务器 | API集成 | OpenClaw | - |
+| [powerpoint-pptx](pages/powerpoint-pptx/SKILL.md) | PowerPoint .pptx 演示文稿创建/编辑，重点占位符管理、视觉QA、跨平台兼容 | 办公文档 | OpenClaw | - |
+| [screenshot](pages/screenshot/SKILL.md) | 多平台截图最佳实践，覆盖 macOS/Linux/Windows/iOS Simulator/Playwright | 通用 | OpenClaw | - |
+| [self-improving-agent](pages/self-improving-agent/SKILL.md) | 记录错误/经验到 .learnings/ 文件，持续自我改进，自动晋升经验到 AGENTS.md/SOUL.md/TOO… | 知识管理 / 通用 | OpenClaw | - |
+| [word-docx](pages/word-docx/SKILL.md) | Word .docx 专业处理指南，涵盖样式/列表/分页/批注追踪修订/跨平台兼容 | 办公文档 | OpenClaw | - |
 
 ---
 
 ## 📂 按名称浏览
 
-
 - [agent-knowledge](pages/agent-knowledge/SKILL.md)
-  > "LS0tCm5hbWU6IGtub3dsZWRnZQpkZXNjcmlwdGlvbjogVW5pZmllZCBrbm93bGVkZ2UgY2FwdHVyZSB
+  > 统一知识收藏和检索，支持 URL/视频/文章/论文/研究输出，Markdown 文件存储
+  `知识管理` | `OpenClaw`
 
 - [api-gateway](pages/api-gateway/SKILL.md)
-  > "LS0tCm5hbWU6IGFwaS1nYXRld2F5CmRlc2NyaXB0aW9uOiB8CiAgQ29ubmVjdCB0byAxMDArIEFQSXM
+  > Maton.ai OAuth 托管网关，一个 API Key 接入 Google/Notion/Slack/GitHub 等 100+ 服务
+  `API集成` | `OpenClaw`
 
 - [clawdhub](pages/clawdhub/SKILL.md)
-  > "LS0tCm5hbWU6IGNsYXdkaHViCmRlc2NyaXB0aW9uOiBVc2UgdGhlIENsYXdkSHViIENMSSB0byBzZWF
+  > ClawdHub CLI，搜索/安装/更新/发布 agent skills，需 npm install -g clawdhub
+  `通用` | `OpenClaw`
 
 - [excel-xlsx](pages/excel-xlsx/SKILL.md)
-  > "LS0tCm5hbWU6IGV4Y2VsLXhsc3gKZGVzY3JpcHRpb246IENvbXByZWhlbnNpdmUgZ3VpZGFuY2UgZm9
+  > Excel .xlsx 工作簿专业处理，涵盖公式/日期/格式/合并单元格/跨平台兼容
+  `办公文档` | `OpenClaw`
 
 - [file-auto-organizer](pages/file-auto-organizer/SKILL.md)
-  > "LS0tCm5hbWU6IGZpbGUtYXV0by1vcmdhbml6ZXIKdmVyc2lvbjogMS4wLjAKZGVzY3JpcHRpb246IOa
+  > 本地文件自动整理 Python 脚本，按类型/日期归类，支持 Windows
+  `文件管理` | `OpenClaw`
 
 - [hita-mind-knowledge](pages/hita-mind-knowledge/SKILL.md)
-  > "LS0tCm5hbWU6IGhpdGEtbWluZC1hbmQta25vd2xlZGdlCmRlc2NyaXB0aW9uOiBoaXRhIOW8gOWPkee
-
-- [letsgo-quick-pak](pages/letsgo-quick-pak/SKILL.md)
-  > >-
+  > AI记忆+知识双模块：8分类记忆(Mind)和L1/L2/L3三层知识库(Knowledge)，纯本地JSON存储
+  `知识管理` | `OpenClaw`
 
 - [mcp-skill](pages/mcp-skill/SKILL.md)
-  > "LS0tCm5hbWU6IG1jcC1za2lsbApkZXNjcmlwdGlvbjogV3JhcHMgdGhlIE1DUCBzZXJ2aWNlIGF0IG1
+  > 封装 mcp.exa.ai，提供网页搜索/深度研究/公司调研/LinkedIn搜索（外部服务）
+  `搜索` · `API集成` | `OpenClaw`
 
 - [mcporter](pages/mcporter/SKILL.md)
-  > "LS0tCm5hbWU6IG1jcG9ydGVyCmRlc2NyaXB0aW9uOiBVc2UgdGhlIG1jcG9ydGVyIENMSSB0byBsaXN
+  > MCP 服务器 CLI 工具，支持 list/call/auth/config/daemon/generate，需 npm install -g mcporte
+  `API集成` | `OpenClaw`
 
 - [multi-search-engine](pages/multi-search-engine/SKILL.md)
-  > "LS0tCm5hbWU6ICJtdWx0aS1zZWFyY2gtZW5naW5lIgpkZXNjcmlwdGlvbjogIk11bHRpIHNlYXJjaCB
+  > 16引擎多搜索聚合（7国内+9国际），支持高级语法、时间过滤、WolframAlpha，无需 API Key
+  `搜索` | `OpenClaw`
 
 - [nano-banana-pro](pages/nano-banana-pro/SKILL.md)
-  > "LS0tCm5hbWU6IG5hbm8tYmFuYW5hLXBybwpkZXNjcmlwdGlvbjogR2VuZXJhdGUgbmV3IGltYWdlcyB
-
-- [notion-obsidian-sync](pages/notion-obsidian-sync/SKILL.md)
-  > 用户说到以下意图之一就激活本 skill：
+  > Google Gemini 3 Pro Image 图像生成/编辑，支持1K/2K/4K，需 GEMINI_API_KEY 和 uv
+  `图像生成` | `OpenClaw`
 
 - [ontology](pages/ontology/SKILL.md)
-  > "LS0tCm5hbWU6IG9udG9sb2d5CmRlc2NyaXB0aW9uOiBBIHR5cGVkIHZvY2FidWxhcnkgKyBjb25zdHJ
+  > 类型化知识图谱，管理 Person/Project/Task/Event 等实体及关系，存储在 memory/ontology/graph.jsonl
+  `知识管理` · `任务管理` | `OpenClaw`
 
 - [openclaw-mcp-plugin](pages/openclaw-mcp-plugin/SKILL.md)
-  > "LS0tCm5hbWU6IG9wZW5jbGF3LW1jcC1wbHVnaW4KZGVzY3JpcHRpb246IE1DUCBJbnRlZ3JhdGlvbiB
+  > MCP 统一调用指南，通过 list/call 操作任意已连接的 MCP 服务器
+  `API集成` | `OpenClaw`
 
 - [powerpoint-pptx](pages/powerpoint-pptx/SKILL.md)
-  > "LS0tCm5hbWU6IHBvd2VycG9pbnQtcHB0eApkZXNjcmlwdGlvbjogQ29tcHJlaGVuc2l2ZSBndWlkYW5
+  > PowerPoint .pptx 演示文稿创建/编辑，重点占位符管理、视觉QA、跨平台兼容
+  `办公文档` | `OpenClaw`
 
 - [screenshot](pages/screenshot/SKILL.md)
-  > "LS0tCm5hbWU6IHNjcmVlbnNob3QKZGVzY3JpcHRpb246IFRha2UgcmVsaWFibGUgc2NyZWVuc2hvdHM
+  > 多平台截图最佳实践，覆盖 macOS/Linux/Windows/iOS Simulator/Playwright
+  `通用` | `OpenClaw`
 
 - [self-improving-agent](pages/self-improving-agent/SKILL.md)
-  > "LS0tCm5hbWU6IHNlbGYtaW1wcm92aW5nLWFnZW50CmRlc2NyaXB0aW9uOiBMb2cgbGVhcm5pbmdzLCB
+  > 记录错误/经验到 .learnings/ 文件，持续自我改进，自动晋升经验到 AGENTS.md/SOUL.md/TOOLS.md
+  `知识管理` · `通用` | `OpenClaw`
 
 - [word-docx](pages/word-docx/SKILL.md)
-  > "LS0tCm5hbWU6IHdvcmQtZG9jeApkZXNjcmlwdGlvbjogQ29tcHJlaGVuc2l2ZSBkb2N1bWVudCBjcmV
+  > Word .docx 专业处理指南，涵盖样式/列表/分页/批注追踪修订/跨平台兼容
+  `办公文档` | `OpenClaw`
