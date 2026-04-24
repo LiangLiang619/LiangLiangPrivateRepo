@@ -33,7 +33,7 @@ notion_url: "https://www.notion.so/ProjectT-Android-34c5f1d3510d8173813ffd08481d
 
 ### Step 1：从流水线下载包
 
-![Crypto.json 位于 LetsGo_Tools 仓库 MoeAssetsToolSet/Config/ 目录下](https://raw.githubusercontent.com/LiangLiang619/LiangLiangPrivateRepo/main/notes/assets/unpack/step1-crypto-json.png)
+![[../assets/unpack/step1-crypto-json.png]]
 
 - 从 CI/CD 流水线下载 Android 安装包（apk/obb 格式）
 
@@ -53,7 +53,7 @@ ProjectT-Android-CN-Development-0.0.462.1-xiaowo-farmcrazy-6-signed/
     └── ...
 ```
 
-![apk 改为 zip 解压后的 assets/ 目录，main.obb.zip 即为目标文件](https://raw.githubusercontent.com/LiangLiang619/LiangLiangPrivateRepo/main/notes/assets/unpack/step2-assets-dir.png)
+![[../assets/unpack/step2-assets-dir.png]]
 
 ### Step 3：解压 main.obb
 
@@ -78,7 +78,7 @@ assets/ProjectT/Content/Paks/
 └── res_base-Android_ASTCClient.pak             (894,129 KB)
 ```
 
-![main.obb 解压后的 ProjectT/Content/Paks/ 目录，包含所有 pak 文件](https://raw.githubusercontent.com/LiangLiang619/LiangLiangPrivateRepo/main/notes/assets/unpack/step3-paks-dir.png)
+![[../assets/unpack/step3-paks-dir.png]]
 
 ### Step 4：打开解包工具
 
@@ -90,7 +90,7 @@ assets/ProjectT/Content/Paks/
 
 - 路径：Recent Configurations → UnrealPakViewerMoe（或 All Configurations → Programs → UnrealPakViewerMoe）
 
-![IDE 编译参数下拉菜单，选择 Programs → UnrealPakViewerMoe](https://raw.githubusercontent.com/LiangLiang619/LiangLiangPrivateRepo/main/notes/assets/unpack/step4-ide-config.png)
+![[../assets/unpack/step4-ide-config.png]]
 
 ## ⚠️ 注意事项
 
