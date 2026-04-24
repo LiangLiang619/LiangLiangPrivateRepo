@@ -6,7 +6,7 @@ tags:
 
 # 🧠 Skills 索引
 
-> 共 16 个 Skill · Notion 为主数据源 · 最后同步：2026-04-24
+> 共 17 个 Skill · Notion 为主数据源 · 最后同步：2026-04-24
 
 ## 📋 全部 Skills
 
@@ -18,6 +18,7 @@ tags:
 | [excel-xlsx](pages/excel-xlsx/SKILL.md) | Excel .xlsx 工作簿专业处理，涵盖公式/日期/格式/合并单元格/跨平台兼容 | 办公文档 | OpenClaw | - |
 | [file-auto-organizer](pages/file-auto-organizer/SKILL.md) | 本地文件自动整理 Python 脚本，按类型/日期归类，支持 Windows | 文件管理 | OpenClaw | - |
 | [hita-mind-knowledge](pages/hita-mind-knowledge/SKILL.md) | AI记忆+知识双模块：8分类记忆(Mind)和L1/L2/L3三层知识库(Knowledge)，纯本地JSON存储 | 知识管理 | OpenClaw | - |
+| [letsgo-quick-pak](pages/letsgo-quick-pak/SKILL.md) | 针对 LetsGo/ProjectT(TMR) 快速打加密 UE Pak 热更包，非 cook 资产直出，不走 HotP… | 游戏开发 / 热更验证 | OpenClaw / Cursor | Lua / PowerShell |
 | [mcp-skill](pages/mcp-skill/SKILL.md) | 封装 mcp.exa.ai，提供网页搜索/深度研究/公司调研/LinkedIn搜索（外部服务） | 搜索 / API集成 | OpenClaw | - |
 | [mcporter](pages/mcporter/SKILL.md) | MCP 服务器 CLI 工具，支持 list/call/auth/config/daemon/generate，需 np… | API集成 | OpenClaw | - |
 | [multi-search-engine](pages/multi-search-engine/SKILL.md) | 16引擎多搜索聚合（7国内+9国际），支持高级语法、时间过滤、WolframAlpha，无需 API Key | 搜索 | OpenClaw | - |
@@ -56,6 +57,10 @@ tags:
 - [hita-mind-knowledge](pages/hita-mind-knowledge/SKILL.md)
   > AI记忆+知识双模块：8分类记忆(Mind)和L1/L2/L3三层知识库(Knowledge)，纯本地JSON存储
   `知识管理` | `OpenClaw`
+
+- [letsgo-quick-pak](pages/letsgo-quick-pak/SKILL.md)
+  > 针对 LetsGo/ProjectT(TMR) 快速打加密 UE Pak 热更包，非 cook 资产直出，不走 HotPatcher。写一个 txt 配置，跑一
+  `游戏开发` · `热更验证` | `OpenClaw` · `Cursor`
 
 - [mcp-skill](pages/mcp-skill/SKILL.md)
   > 封装 mcp.exa.ai，提供网页搜索/深度研究/公司调研/LinkedIn搜索（外部服务）
