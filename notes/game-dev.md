@@ -1,6 +1,6 @@
 # 📚 游戏开发
 
-> 共 4 条笔记 · 最后同步：2026-04-24
+> 共 5 条笔记 · 最后同步：2026-04-24
 
 ---
 
@@ -114,6 +114,43 @@ com.tencent.letsgo/files/
 
 - USB 连接设备后，通过 Windows 资源管理器可直接访问该路径
 - 版本号：Development-0.0.458.1
+
+---
+
+## ⭐️⭐️ 手机端强制Mount Pak文件
+
+**来源**：工作 · **创建**：2026-04-24 · #Lua #UE5 #热更
+
+> 通过Lua在iOS手机端强制挂载pak文件，使用GetPhysicalFullPathVer获取持久化下载目录并调用UPakMountManager.Mount
+
+## 📌 核心流程
+
+- 通过 `FMoeDolphinManager:GetPhysicalFullPathVer()` 获取实际物理路径
+- `UBlueprintPathsLibrary.ProjectPersistentDownloadDir()` 获取持久化下载目录
+- 拼接 pak 文件名得到完整路径
+- 调用 `UPakMountManager.Mount(pak_path, mount_order)` 挂载
+
+## 💻 示例代码
+
+以下示例为 pak 位于 iOS 手机塞文件的根目录（PersistentDownloadDir）：
+
+```lua
+local function mount_pak(pak_file_name, mount_order)
+    local download_dir = UE4.FMoeDolphinManager.GetInstance():GetPhysicalFullPathVer(
+        UE4.UBlueprintPathsLibrary.ProjectPersistentDownloadDir()
+    )
+    local pak_path = string.format("%s/%s", download_dir, pak_file_name)
+    UE4.UPakMountManager.Mount(pak_path, mount_order)
+end
+
+mount_pak("YourAsset.pak", 0)
+```
+
+## ⚠️ 注意事项
+
+- `mount_order` 决定 pak 的优先级，值越小优先级越高
+- `GetPhysicalFullPathVer` 是项目自定义的路径解析方法，将虚拟路径转为真实物理路径
+- 确保 pak 文件已存在于设备的 PersistentDownloadDir 目录下
 
 ---
 
