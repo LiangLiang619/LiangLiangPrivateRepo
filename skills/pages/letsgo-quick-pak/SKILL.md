@@ -62,6 +62,10 @@ User is in a LetsGo / ProjectT (TMR) project and mentions any of:
 - Do NOT auto-generate lua files (including `Mount_*.lua` / `QuickPakMountAll.lua`).
   Exception: `lua/QuickPakMount.lua` is a hand-written runtime helper and is fine to commit.
 
+## Reference docs
+
+- 完整使用文档（iWiki）：https://iwiki.woa.com/p/4020010290
+
 ## Available context (quick reuse)
 
 - UnrealPak: `E:\UGit\LetsGoDevelop\ue4_tracking_rdcsp\Engine\Binaries\Win64\UnrealPak.exe`
