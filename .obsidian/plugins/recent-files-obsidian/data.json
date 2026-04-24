@@ -1,4 +1,42 @@
 {
+  "recentFiles": [
+    {
+      "basename": "index",
+      "path": "skills/index.md"
+    },
+    {
+      "basename": "index",
+      "path": "rules/index.md"
+    },
+    {
+      "basename": "index",
+      "path": "notes/index.md"
+    },
+    {
+      "basename": "Android手机包塞文件测试路径",
+      "path": "notes/pages/Android手机包塞文件测试路径.md"
+    },
+    {
+      "basename": "ProjectT-Android-包解包流程",
+      "path": "notes/pages/ProjectT-Android-包解包流程.md"
+    },
+    {
+      "basename": "index",
+      "path": "todos/index.md"
+    },
+    {
+      "basename": "元梦之星-LiteProject-推进-Service-化，减少-LiteProject-对-System-仓库的全量依赖",
+      "path": "todos/pages/元梦之星-LiteProject-推进-Service-化，减少-LiteProject-对-System-仓库的全量依赖.md"
+    },
+    {
+      "basename": "tasks",
+      "path": "todos/tasks.md"
+    }
+  ],
+  "omittedPaths": [],
+  "omittedTags": [],
+  "updateOn": "file-open",
+  "omitBookmarks": false,
   "maxLength": 25,
   "openType": "tab"
 }

@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git pull:*)",
+      "Bash(cp .obsidian/app.json .obsidian/app.json.bak)",
+      "Bash(cp .obsidian/appearance.json .obsidian/appearance.json.bak)",
+      "Bash(git checkout:*)",
+      "Bash(cp .obsidian/app.json.bak .obsidian/app.json)",
+      "Bash(cp .obsidian/appearance.json.bak .obsidian/appearance.json)",
+      "Bash(git push:*)"
+    ]
+  }
+}

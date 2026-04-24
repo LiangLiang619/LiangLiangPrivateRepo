@@ -1,14 +1,1 @@
-{
-  "legacyEditor": false,
-  "livePreview": true,
-  "defaultViewMode": "source",
-  "vimMode": false,
-  "strictLineBreaks": false,
-  "showLineNumber": true,
-  "spellcheck": false,
-  "spellcheckDictionary": [],
-  "foldHeading": true,
-  "foldIndent": true,
-  "readableLineLength": true,
-  "tabSize": 2
-}
+{}
