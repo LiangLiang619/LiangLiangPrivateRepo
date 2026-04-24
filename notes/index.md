@@ -6,68 +6,79 @@ tags:
 
 # 📚 亮亮的学习笔记
 
-> 数据来源：Notion | 格式：Obsidian Dataview
-> 以 Notion 为主数据源，此处为镜像。
+> Notion 为主数据源 · Obsidian 为镜像 · 安装 [Dataview 插件](obsidian://show-plugin?id=dataview) 后索引变为动态表格
+
+
+## 📋 全部笔记
+
+| 标题 | 分类 | ⭐ | 标签 | 来源 | 创建 |
+|---|---|---|---|---|---|
+| [[ProjectT-Android-包解包流程|ProjectT Android 包解包流程]] | 游戏开发 | ⭐️⭐️⭐️ | `- "Android` `LetsGo` `UE5` `热更` | 工作 | 2026-04-24 |
+| [[Android手机包塞文件测试路径|Android手机包塞文件测试路径]] | 游戏开发 | ⭐️⭐️ | `- "Android` `LetsGo` | 工作 | 2026-04-24 |
+| [[ProjectT-启动-LocalDS-的方式|ProjectT 启动 LocalDS 的方式]] | 游戏开发 | ⭐️⭐️⭐️ 必掌握 | `- "UE5` | 工作 | 2026-04-22 |
+| [[UE5-网络同步原理与实践（以-IdleShow-为例）|UE5 网络同步原理与实践（以 IdleShow 为例）]] | 游戏开发 | ⭐️⭐️⭐️ 必掌握 | `- "UE5` `Lua` `网络` | 工作 | 2026-04-22 |
+| [[示例-C++-虚函数表（vtable）原理|【示例】C++ 虚函数表（vtable）原理]] | 编程 | ⭐️⭐️⭐️ 必掌握 | `- "C++` `设计模式` | 学习 | 2026-04-22 |
+| [[闭包（Closure）原理详解|闭包（Closure）原理详解]] | 语言 | ⭐️⭐️⭐️ 必掌握 | `- "Lua` `C++` | 学习 | 2026-04-22 |
+| [[面试技巧：项目深挖-+-隐性指标|面试技巧：项目深挖 + 隐性指标]] | 其他 | ⭐️⭐️⭐️ 必掌握 | `- "面试` | 工作 | 2026-04-22 |
+| [[手机端强制Mount-Pak文件|手机端强制Mount Pak文件]] | 游戏开发 | ⭐️⭐️ 重要 | `- "Lua` `UE5` `热更` | 工作 | 2026-04-24 |
+
+## 📂 按分类
+
+### 📝 其他（1 条）
+
+- ⭐️⭐️⭐️ 必掌握 [[面试技巧：项目深挖-+-隐性指标|面试技巧：项目深挖 + 隐性指标]]  
+  > 面试官视角：项目深挖技巧 + 品格/人际/概念能力三类隐性指标评估方法  
+  `- "面试`  
+
+### 🎮 游戏开发（5 条）
+
+- ⭐️⭐️⭐️ [[ProjectT-Android-包解包流程|ProjectT Android 包解包流程]]  
+  > 从流水线下载 Android 包并使用 UnrealPakViewerMoe 解包查看 pak 资产的完整流程  
+  `- "Android` · `LetsGo` · `UE5` · `热更`  
+
+- ⭐️⭐️ [[Android手机包塞文件测试路径|Android手机包塞文件测试路径]]  
+  > Android Pixel 5 塞文件路径：内部共享存储空间/Android/data/com.tencent.letsgo/files/  
+  `- "Android` · `LetsGo`  
+
+- ⭐️⭐️⭐️ 必掌握 [[ProjectT-启动-LocalDS-的方式|ProjectT 启动 LocalDS 的方式]]  
+  > 启动器资产名：FarmLocalDSTool。分两步：①FarmLocalDSTool 选 ProjectT 填私服配置 Start；② 游戏内调试面板设 LocalDSMapID 后点连接。  
+  `- "UE5`  
+
+- ⭐️⭐️⭐️ 必掌握 [[UE5-网络同步原理与实践（以-IdleShow-为例）|UE5 网络同步原理与实践（以 IdleShow 为例）]]  
+  > UE5 网络同步核心概念：主控端/模拟端、需要同步的数据类型、FMoeActionStateDataProxy 结构体、OnRep 机制、组件复制前提，以及 IdleShow 随机数同步完整流程。  
+  `- "UE5` · `Lua` · `网络`  
+
+- ⭐️⭐️ 重要 [[手机端强制Mount-Pak文件|手机端强制Mount Pak文件]]  
+  > 通过Lua在iOS手机端强制挂载pak文件，使用GetPhysicalFullPathVer获取持久化下载目录并调用UPakMountManager.Mount  
+  `- "Lua` · `UE5` · `热更`  
+
+### 💻 编程（1 条）
+
+- ⭐️⭐️⭐️ 必掌握 [[示例-C++-虚函数表（vtable）原理|【示例】C++ 虚函数表（vtable）原理]]  
+  > 每个含虚函数的类有一张 vtable，对象头部存 vptr 指针，虚函数调用通过 vptr 间接跳转，实现运行时多态。  
+  `- "C++` · `设计模式`  
+
+### 📖 语言（1 条）
+
+- ⭐️⭐️⭐️ 必掌握 [[闭包（Closure）原理详解|闭包（Closure）原理详解]]  
+  > 闭包 = 函数 + 捕获的 upvalue。外部函数局部变量因被内部函数引用而迁移到堆上，生命周期超越作用域。  
+  `- "Lua` · `C++`  
 
 ---
 
-## 🔍 全部笔记（按重要程度排序）
+## 🔍 动态索引（需要 Dataview 插件）
+
+> 安装 Dataview 插件后，以下代码块会变成可排序的动态表格
 
 ```dataview
 TABLE
   category AS "分类",
-  importance_label AS "⭐️",
+  importance_label AS "⭐",
   tags AS "标签",
   source AS "来源",
   summary AS "摘要",
-  created AS "创建时间"
+  created AS "创建"
 FROM "notes"
 WHERE file.name != "index"
 SORT importance DESC, created DESC
-```
-
----
-
-## 📂 按分类浏览
-
-```dataview
-TABLE
-  importance_label AS "⭐️",
-  tags AS "标签",
-  summary AS "摘要"
-FROM "notes"
-WHERE file.name != "index" AND category = "游戏开发"
-SORT importance DESC
-```
-
-> 修改上方 `category = "游戏开发"` 可切换分类：编程 / 架构 / 工具 / 语言 / 算法 / 游戏开发 / AI·Agent / 其他
-
----
-
-## 🏷️ 按标签浏览
-
-```dataview
-TABLE
-  category AS "分类",
-  importance_label AS "⭐️",
-  summary AS "摘要"
-FROM "notes"
-WHERE file.name != "index"
-FLATTEN tags AS tag
-WHERE tag = "UE5"
-SORT importance DESC
-```
-
-> 修改上方 `tag = "UE5"` 可切换标签
-
----
-
-## 📊 统计
-
-```dataview
-TABLE rows.file.link AS "笔记", length(rows) AS "数量"
-FROM "notes"
-WHERE file.name != "index"
-GROUP BY category
-SORT length(rows) DESC
 ```
