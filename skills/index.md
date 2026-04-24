@@ -6,7 +6,7 @@ tags:
 
 # 🧠 Skills 索引
 
-> 共 17 个 Skill · Notion 为主数据源 · 最后同步：2026-04-24
+> 共 18 个 Skill · Notion 为主数据源 · 最后同步：2026-04-24
 
 ## 📋 全部 Skills
 
@@ -23,6 +23,7 @@ tags:
 | [mcporter](pages/mcporter/SKILL.md) | MCP 服务器 CLI 工具，支持 list/call/auth/config/daemon/generate，需 np… | API集成 | OpenClaw | - |
 | [multi-search-engine](pages/multi-search-engine/SKILL.md) | 16引擎多搜索聚合（7国内+9国际），支持高级语法、时间过滤、WolframAlpha，无需 API Key | 搜索 | OpenClaw | - |
 | [nano-banana-pro](pages/nano-banana-pro/SKILL.md) | Google Gemini 3 Pro Image 图像生成/编辑，支持1K/2K/4K，需 GEMINI_API_KE… | 图像生成 | OpenClaw | - |
+| [notion-obsidian-sync](pages/notion-obsidian-sync/SKILL.md) | Notion 主数据源 + Obsidian/GitHub 镜像双端同步工作流。支持记笔记、记待办、同步索引，维护 no… | 笔记管理 / 待办管理 / 知识库同步 | Python / Notion API / Git | - |
 | [ontology](pages/ontology/SKILL.md) | 类型化知识图谱，管理 Person/Project/Task/Event 等实体及关系，存储在 memory/ontol… | 知识管理 / 任务管理 | OpenClaw | - |
 | [openclaw-mcp-plugin](pages/openclaw-mcp-plugin/SKILL.md) | MCP 统一调用指南，通过 list/call 操作任意已连接的 MCP 服务器 | API集成 | OpenClaw | - |
 | [powerpoint-pptx](pages/powerpoint-pptx/SKILL.md) | PowerPoint .pptx 演示文稿创建/编辑，重点占位符管理、视觉QA、跨平台兼容 | 办公文档 | OpenClaw | - |
@@ -77,6 +78,10 @@ tags:
 - [nano-banana-pro](pages/nano-banana-pro/SKILL.md)
   > Google Gemini 3 Pro Image 图像生成/编辑，支持1K/2K/4K，需 GEMINI_API_KEY 和 uv
   `图像生成` | `OpenClaw`
+
+- [notion-obsidian-sync](pages/notion-obsidian-sync/SKILL.md)
+  > Notion 主数据源 + Obsidian/GitHub 镜像双端同步工作流。支持记笔记、记待办、同步索引，维护 notes/pages/ 和 todos/p
+  `笔记管理` · `待办管理` · `知识库同步` | `Python` · `Notion API` · `Git`
 
 - [ontology](pages/ontology/SKILL.md)
   > 类型化知识图谱，管理 Person/Project/Task/Event 等实体及关系，存储在 memory/ontology/graph.jsonl
