@@ -18,7 +18,7 @@ tags:
 | [excel-xlsx](pages/excel-xlsx/SKILL.md) | "LS0tCm5hbWU6IGV4Y2VsLXhsc3gKZGVzY3JpcHRpb246IENvbXByZWhlbnN… | - |
 | [file-auto-organizer](pages/file-auto-organizer/SKILL.md) | "LS0tCm5hbWU6IGZpbGUtYXV0by1vcmdhbml6ZXIKdmVyc2lvbjogMS4wLjA… | - |
 | [hita-mind-knowledge](pages/hita-mind-knowledge/SKILL.md) | "LS0tCm5hbWU6IGhpdGEtbWluZC1hbmQta25vd2xlZGdlCmRlc2NyaXB0aW9… | - |
-| [letsgo-quick-pak](pages/letsgo-quick-pak/SKILL.md) | - "快速打个 pak"、"打一个 pak"、"打一个热更包"、"res_base 补丁"、"打 _N_P 包" - "… | `references` / `scripts` |
+| [letsgo-quick-pak](pages/letsgo-quick-pak/SKILL.md) | >- | `.gitignore` / `configs` / `lua` / `README.md` / `scripts` |
 | [mcp-skill](pages/mcp-skill/SKILL.md) | "LS0tCm5hbWU6IG1jcC1za2lsbApkZXNjcmlwdGlvbjogV3JhcHMgdGhlIE1… | - |
 | [mcporter](pages/mcporter/SKILL.md) | "LS0tCm5hbWU6IG1jcG9ydGVyCmRlc2NyaXB0aW9uOiBVc2UgdGhlIG1jcG9… | - |
 | [multi-search-engine](pages/multi-search-engine/SKILL.md) | "LS0tCm5hbWU6ICJtdWx0aS1zZWFyY2gtZW5naW5lIgpkZXNjcmlwdGlvbjo… | - |
@@ -55,7 +55,7 @@ tags:
   > "LS0tCm5hbWU6IGhpdGEtbWluZC1hbmQta25vd2xlZGdlCmRlc2NyaXB0aW9uOiBoaXRhIOW8gOWPkee
 
 - [letsgo-quick-pak](pages/letsgo-quick-pak/SKILL.md)
-  > - "快速打个 pak"、"打一个 pak"、"打一个热更包"、"res_base 补丁"、"打 _N_P 包" - "挂载测试 / 强制 mount / Lu
+  > >-
 
 - [mcp-skill](pages/mcp-skill/SKILL.md)
   > "LS0tCm5hbWU6IG1jcC1za2lsbApkZXNjcmlwdGlvbjogV3JhcHMgdGhlIE1DUCBzZXJ2aWNlIGF0IG1

@@ -1,0 +1,9 @@
+# 示例：用 D:\AssetNameMapping_8000 覆盖当前工程的 AssetNameMapping
+# {project} 会被 Build.ps1 自动替换成当前仓 .uproject 的名字（LetsGo / ProjectT 等）
+pak: res_base-Android_ASTCClient_2_P
+priority: 100
+reloadAssetNameMapping: true
+
+D:/AssetNameMapping_8000/AssetNameMapping.fb   -> ../../../{project}/Content/LetsGo/Data/AssetData/AssetNameMapping/AssetNameMapping.fb
+D:/AssetNameMapping_8000/AssetNameMapping.json -> ../../../{project}/Content/LetsGo/Data/AssetData/AssetNameMapping/AssetNameMapping.json
+D:/AssetNameMapping_8000/AssetNameMapping.txt  -> ../../../{project}/Content/LetsGo/Data/AssetData/AssetNameMapping/AssetNameMapping.txt

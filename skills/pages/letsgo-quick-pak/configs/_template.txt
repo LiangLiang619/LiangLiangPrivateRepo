@@ -1,0 +1,36 @@
+# ============================================================
+# letsgo-quick-pak config template
+# 复制此文件为 <你的任务名>.txt，跑 ./scripts/Build.ps1 即可
+# ============================================================
+#
+# 语法规则：
+#   1) 以 # 开头的是注释
+#   2) 头部：key: value（冒号后可有空格）
+#   3) 文件行：<源绝对路径>  ->  <pak 内虚拟路径>
+#      可省略 ->，省略时按源文件名挂到  Content/<源文件名>
+#   4) 支持占位符 {project}，会被脚本自动替换为当前工程名（从 .uproject 读）
+#      - 在 LetsGo 仓里跑 → {project} = LetsGo
+#      - 在 TMR 仓里跑   → {project} = ProjectT（看对应 .uproject 取到的名字）
+#      - 也可手动覆盖： ./scripts/Build.ps1 -Project MyProject
+
+# ---- 必填：pak 名字（不要带 .pak 后缀，必须以 _N_P 结尾，N 越大优先级越高） ----
+pak: res_base-Android_ASTCClient_2_P
+
+# ---- 可选：mount 优先级，默认 100，越大越先查 ----
+priority: 100
+
+# ---- 可选：mount 完成后是否重载 AssetNameMapping，默认 false ----
+reloadAssetNameMapping: false
+
+# ---- 文件列表（下面随便删改） ----
+
+# 完整 mount 路径（常规做法：../../../{project}/Content/...）
+D:/AssetNameMapping_8000/AssetNameMapping.fb   -> ../../../{project}/Content/LetsGo/Data/AssetData/AssetNameMapping/AssetNameMapping.fb
+D:/AssetNameMapping_8000/AssetNameMapping.json -> ../../../{project}/Content/LetsGo/Data/AssetData/AssetNameMapping/AssetNameMapping.json
+D:/AssetNameMapping_8000/AssetNameMapping.txt  -> ../../../{project}/Content/LetsGo/Data/AssetData/AssetNameMapping/AssetNameMapping.txt
+
+# 短 mount 路径（给 Lua 手挂到 Content/ 根的情况）
+# F:/UGit/TMR_ProjectTDevelop/{project}_Shell/Content/Movies/Loading_V4.mp4 -> Content/Movies/Loading_V4.mp4
+
+# 省略虚拟路径（自动挂到 Content/<文件名>）
+# D:/some/where/foo.csv
