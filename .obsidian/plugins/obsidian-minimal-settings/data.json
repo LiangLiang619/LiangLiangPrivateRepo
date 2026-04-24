@@ -1,0 +1,17 @@
+{
+  "focusMode": false,
+  "lineWidth": 88,
+  "lineWidthWide": 100,
+  "maxWidth": false,
+  "imageWidth": 100,
+  "imageZoom": true,
+  "tagStyle": "default",
+  "divStyle": "default",
+  "tableStyle": "default",
+  "trimCols": false,
+  "hideNotes": false,
+  "hideAttachments": false,
+  "hideFolders": false,
+  "darkStyle": "default",
+  "lightStyle": "default"
+}

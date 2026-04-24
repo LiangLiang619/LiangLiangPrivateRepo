@@ -1,0 +1,20 @@
+{
+  "toolbar_location": "top",
+  "mobile_toolbar_location": "top",
+  "aestheticStyle": "default",
+  "cMenuVisibility": true,
+  "cMenuBottomValue": 4,
+  "isLoadOnMobile": true,
+  "menuCommands": [
+    {"id": "editor:toggle-bold", "icon": "bold", "name": "Bold"},
+    {"id": "editor:toggle-italic", "icon": "italic", "name": "Italic"},
+    {"id": "editor:toggle-strikethrough", "icon": "strikethrough", "name": "Strikethrough"},
+    {"id": "editor:toggle-code", "icon": "code", "name": "Inline Code"},
+    {"id": "editor:insert-codeblock", "icon": "code-2", "name": "Code Block"},
+    {"id": "editor:toggle-blockquote", "icon": "quote", "name": "Blockquote"},
+    {"id": "editor:toggle-bullet-list", "icon": "list", "name": "Bullet List"},
+    {"id": "editor:toggle-numbered-list", "icon": "list-ordered", "name": "Numbered List"},
+    {"id": "editor:toggle-checklist-status", "icon": "check-square", "name": "Checklist"},
+    {"id": "editor:insert-horizontal-rule", "icon": "minus", "name": "Divider"}
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "groups": [
+    {
+      "title": "全部待办",
+      "query": "",
+      "groupBy": "file",
+      "showChecked": false,
+      "autoRefresh": true
+    }
+  ]
+}
