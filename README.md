@@ -1,1 +1,27 @@
-"IyDwn5eC77iPIEFnZW50IExpYnJhcnkKCuS4quS6uiBBZ2VudCDmlofku7blupMg4oCUIOe7n+S4gOeuoeeQhiBydWxlc+OAgXNraWxsc+OAgXByb21wdHPjgIFjb25maWdz44CCCgojIyDnm67lvZXnu5PmnoQKClxcXAphZ2VudC1saWJyYXJ5LwrilJzilIDilIAgc2tpbGxzLyAgICAgICAgICAjIE9wZW5DbGF3IFNraWxscwrilJzilIDilIAgcnVsZXMvICAgICAgICAgICAjIEN1cnNvciAvIENsYXVkZSBydWxlcyAoLm1kYyAvIC5tZCkK4pSc4pSA4pSAIHByb21wdHMvICAgICAgICAgIyDluLjnlKggUHJvbXB0IOaooeadvwrilJTilIDilIAgY29uZmlncy8gICAgICAgICAjIEFnZW50IOmFjee9ruaWh+S7tgpcXFwKCiMjIOe0ouW8lQoK8J+TiyBOb3Rpb24g57Si5byV6KGoIOeUsSBPcGVuQ2xhdyBBSSDnu7TmiqTvvIzmlK/mjIHmjInnsbvlnosv5bel5YW3L+WcuuaZr+ajgOe0ouOAggoKIyMg5L2/55So5pa55byPCgrnm7TmjqXlkYror4kgT3BlbkNsYXcgQUnvvJoKLSDlhaXlupPvvJrmiorov5nkuKogcnVsZSDlrZjov5sgYWdlbnQtbGlicmFyeSArIOeymOi0tOWGheWuuQotIOajgOe0ou+8muacieayoeaciemAguWQiCBDdXJzb3Ig55qE5Luj56CB5a6h5p+lIHJ1bGXvvJ8KLSDojrflj5bvvJrmioogbXVsdGktc2VhcmNoLWVuZ2luZSBza2lsbCDlj5Hnu5nmiJEKCiMjIOe7n+iuoQoKLSBTa2lsbHM6IDE2IHwgUnVsZXM6IDAgfCBQcm9tcHRzOiAwIHwgQ29uZmlnczogMAoK5pyA5ZCO5pu05paw77yaMjAyNi0wNC0yMg=="
+# LiangLiangPrivateRepo
+
+天才亮亮小帅哥的个人知识库 🚀
+
+## 目录结构
+
+| 目录 | 说明 |
+|---|---|
+| `skills/` | OpenClaw Agent Skills |
+| `rules/` | Agent Rules |
+| `prompts/` | Prompt 模板 |
+| `configs/` | 配置文件 |
+| `notes/` | 📚 学习笔记（同步自 Notion，按分类汇总） |
+| `todos/` | ✅ 待办镜像（以 Notion 为主，此处只读参考） |
+
+## 笔记分类
+
+- [编程](notes/programming.md)
+- [语言](notes/language.md)
+- [游戏开发](notes/game-dev.md)
+- [其他](notes/misc.md)
+
+## 同步说明
+
+- Notion 是主数据源，笔记/待办以 Notion 为准
+- GitHub 用于备份和 Obsidian 阅读
+- 同步时间：2026-04-24 16:42
