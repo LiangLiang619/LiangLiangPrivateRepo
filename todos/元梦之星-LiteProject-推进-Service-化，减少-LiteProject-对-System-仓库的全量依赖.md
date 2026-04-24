@@ -1,0 +1,34 @@
+---
+title: "【元梦之星】【LiteProject】推进 Service 化，减少 LiteProject 对 System 仓库的全量依赖"
+status: "Not started"
+priority: "High"
+priority_num: 3
+task_type:
+  - "💬 Feature request"
+effort: "Large"
+due: 2026-04-27
+summary: "推进 Service 化，减少 LiteProject 对 System 仓库的全量依赖，4/27 开始联调"
+created: 2026-04-24
+updated: 2026-04-24
+notion_url: "https://www.notion.so/LiteProject-Service-LiteProject-System-34c5f1d3510d815c9361d10debb95367"
+---
+
+# ⬜ 🔴 【元梦之星】【LiteProject】推进 Service 化，减少 LiteProject 对 System 仓库的全量依赖
+
+| 字段 | 值 |
+|---|---|
+| **状态** | ⬜ Not started |
+| **优先级** | 🔴 High |
+| **类型** | 💬 Feature request |
+| **工作量** | Large |
+| **截止日期** | 2026-04-27 |
+| **创建时间** | 2026-04-24 |
+
+## 📝 描述
+
+TAPD: https://tapd.woa.com/tapd_fe/20427612/story/detail/1020427612133690234
+截止/开始时间：4/27 开始联调
+
+---
+
+> [在 Notion 中查看](https://www.notion.so/LiteProject-Service-LiteProject-System-34c5f1d3510d815c9361d10debb95367)
