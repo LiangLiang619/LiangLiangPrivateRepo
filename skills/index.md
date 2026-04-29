@@ -6,7 +6,7 @@ tags:
 
 # 🧠 Skills 索引
 
-> Notion 为主数据源 · Obsidian 为镜像 · 共 20 个 Skill
+> Notion 为主数据源 · Obsidian 为镜像 · 共 21 个 Skill
 
 ## 📋 全部 Skills
 
@@ -30,6 +30,7 @@ tags:
 | [replace-shortpath-to-longpath](pages/replace-shortpath-to-longpath/SKILL.md) | 两阶段长路径迁移：① Python 扫描脚本扫全量 wiki 接口调用，输出带 arg_expres… | 长路径迁移 / Lua代码扫描 / 资产路径替换 | OpenClaw | Python / Lua | 2026-04-27 |
 | [screenshot](pages/screenshot/SKILL.md) | 多平台截图最佳实践，覆盖 macOS/Linux/Windows/iOS Simulator/Pla… | 通用 | OpenClaw | - | 2026-04-22 |
 | [self-improving-agent](pages/self-improving-agent/SKILL.md) | 记录错误/经验到 .learnings/ 文件，持续自我改进，自动晋升经验到 AGENTS.md/S… | 知识管理 / 通用 | OpenClaw | - | 2026-04-22 |
+| [ue-asset-migration](pages/ue-asset-migration/SKILL.md) | 通过 UE Editor MCP 将 /Content/LetsGo 或 /Content/Feat… | UE资产迁移 / SDK资产迁移 | OpenClaw / UE Editor MCP | Python | 2026-04-29 |
 | [ue-bp-migration-analysis](pages/ue-bp-migration-analysis/SKILL.md) | UE Blueprint 迁移方案全景分析规则。当用户提供 Blueprint 资产列表时，按统一格… | 代码审查 / 重构 | OpenClaw | - | 2026-04-28 |
 | [word-docx](pages/word-docx/SKILL.md) | Word .docx 专业处理指南，涵盖样式/列表/分页/批注追踪修订/跨平台兼容 | 办公文档 | OpenClaw | - | 2026-04-22 |
 
@@ -48,6 +49,12 @@ tags:
 - [openclaw-mcp-plugin](pages/openclaw-mcp-plugin/SKILL.md)
   > MCP 统一调用指南，通过 list/call 操作任意已连接的 MCP 服务器
   `OpenClaw`
+
+### UE资产迁移（1 个）
+
+- [ue-asset-migration](pages/ue-asset-migration/SKILL.md)
+  > 通过 UE Editor MCP 将 /Content/LetsGo 或 /Content/Feature 下的资产迁移到 /Content/LetsGoSDK
+  `OpenClaw` · `UE Editor MCP` | `Python`
 
 ### 代码审查（1 个）
 
