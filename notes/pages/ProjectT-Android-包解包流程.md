@@ -12,7 +12,7 @@ importance_label: "⭐️⭐️⭐️"
 summary: "从流水线下载 Android 包并使用 UnrealPakViewerMoe 解包查看 pak 资产的完整流程"
 created: 2026-04-24
 updated: 2026-04-24
-notion_url: "https://www.notion.so/ProjectT-Android-34c5f1d3510d8173813ffd08481dd4e1"
+notion_url: "https://app.notion.com/p/ProjectT-Android-34c5f1d3510d8173813ffd08481dd4e1"
 ---
 
 # ProjectT Android 包解包流程

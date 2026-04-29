@@ -10,7 +10,7 @@ importance_label: "⭐️⭐️"
 summary: "Android Pixel 5 塞文件路径：内部共享存储空间/Android/data/com.tencent.letsgo/files/"
 created: 2026-04-24
 updated: 2026-04-24
-notion_url: "https://www.notion.so/Android-34c5f1d3510d8181a574e7a581b70067"
+notion_url: "https://app.notion.com/p/Android-34c5f1d3510d8181a574e7a581b70067"
 ---
 
 # Android手机包塞文件测试路径

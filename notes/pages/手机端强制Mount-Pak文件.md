@@ -11,7 +11,7 @@ importance_label: "⭐️⭐️ 重要"
 summary: "通过Lua在iOS手机端强制挂载pak文件，使用GetPhysicalFullPathVer获取持久化下载目录并调用UPakMountManager.Mount"
 created: 2026-04-24
 updated: 2026-04-24
-notion_url: "https://www.notion.so/Mount-Pak-34c5f1d3510d81f38153cf46a91e8691"
+notion_url: "https://app.notion.com/p/Mount-Pak-34c5f1d3510d81f38153cf46a91e8691"
 ---
 
 # 手机端强制Mount Pak文件

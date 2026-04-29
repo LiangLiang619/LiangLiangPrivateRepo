@@ -10,7 +10,7 @@ importance_label: "⭐️⭐️⭐️ 必掌握"
 summary: "每个含虚函数的类有一张 vtable，对象头部存 vptr 指针，虚函数调用通过 vptr 间接跳转，实现运行时多态。"
 created: 2026-04-22
 updated: 2026-04-22
-notion_url: "https://www.notion.so/C-vtable-34a5f1d3510d8158984ef4999d8372e7"
+notion_url: "https://app.notion.com/p/C-vtable-34a5f1d3510d8158984ef4999d8372e7"
 ---
 
 # 【示例】C++ 虚函数表（vtable）原理

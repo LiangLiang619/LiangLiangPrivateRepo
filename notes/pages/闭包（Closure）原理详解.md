@@ -10,7 +10,7 @@ importance_label: "⭐️⭐️⭐️ 必掌握"
 summary: "闭包 = 函数 + 捕获的 upvalue。外部函数局部变量因被内部函数引用而迁移到堆上，生命周期超越作用域。"
 created: 2026-04-22
 updated: 2026-04-22
-notion_url: "https://www.notion.so/Closure-34a5f1d3510d814fb815fa939c0bdbab"
+notion_url: "https://app.notion.com/p/Closure-34a5f1d3510d814fb815fa939c0bdbab"
 ---
 
 # 闭包（Closure）原理详解
