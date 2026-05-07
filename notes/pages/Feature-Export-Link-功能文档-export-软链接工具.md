@@ -11,7 +11,7 @@ importance_label: "⭐️⭐️"
 summary: "将 mod_protos 下玩法的 excel/Export 目录通过软链接方式链接到独立壳仓库 {FeatureName}_Shell 的 Feature/{FeatureName}/Script/Export 目录。运行 MakeFeatureExportLink.bat 即可（需管理员权限）。两个版本：原版(FeatureExportLink.py)适配 LetsGo 壳，Shell版(FeatureExportLink_shell.py)适配独立 *_Shell 壳仓库。"
 created: 2026-04-29
 updated: 2026-04-29
-notion_url: "https://app.notion.com/p/Feature-Export-Link-export-3515f1d3510d8180a01ad2958323a297"
+notion_url: "https://www.notion.so/Feature-Export-Link-export-3515f1d3510d8180a01ad2958323a297"
 ---
 
 # Feature Export Link 功能文档 - export 软链接工具
