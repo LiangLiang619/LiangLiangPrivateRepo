@@ -6,7 +6,7 @@ tags:
 
 # 🧠 Skills 索引
 
-> Notion 为主数据源 · Obsidian 为镜像 · 共 23 个 Skill
+> Notion 为主数据源 · Obsidian 为镜像 · 共 24 个 Skill
 
 ## 📋 全部 Skills
 
@@ -34,6 +34,7 @@ tags:
 | [ue-asset-path-replace](pages/ue-asset-path-replace/SKILL.md) | 资产迁移后扫描并替换Lua/INI/C++/Python/CSV/JSON中的硬编码UE资产路径引用… | 资产迁移 / 路径替换 / 代码扫描 | OpenClaw | Lua / C++ / Python | 2026-05-09 |
 | [ue-bp-3c-migration-analysis](pages/ue-bp-3c-migration-analysis/SKILL.md) | 分析UE Blueprint资产迁移至通用3C仓库的全景方案，输出结构化Markdown文档。覆盖继… | 资产迁移 / 3C仓库 / Blueprint分析 | OpenClaw / UE Editor MCP | Python / Lua | 2026-05-09 |
 | [ue-bp-migration-analysis](pages/ue-bp-migration-analysis/SKILL.md) | UE Blueprint 迁移方案全景分析规则。当用户提供 Blueprint 资产列表时，按统一格… | 代码审查 / 重构 | OpenClaw | - | 2026-04-28 |
+| [ue-lua-rebind](pages/ue-lua-rebind/SKILL.md) | Widget Blueprint资产迁移后换绑Lua脚本路径。检查UIWndNameToLuaPat… | 资产迁移 / 脚本换绑 / Widget | OpenClaw / UE Editor MCP | Lua | 2026-05-09 |
 | [word-docx](pages/word-docx/SKILL.md) | Word .docx 专业处理指南，涵盖样式/列表/分页/批注追踪修订/跨平台兼容 | 办公文档 | OpenClaw | - | 2026-04-22 |
 
 ## 📂 按适用场景
@@ -130,7 +131,7 @@ tags:
   > Notion 主数据源 + Obsidian/GitHub 镜像双端同步工作流。支持记笔记、记待办、同步索引，维护 notes/pages/ 和 todos/p
   `Python` · `Notion API` · `Git`
 
-### 资产迁移（2 个）
+### 资产迁移（3 个）
 
 - [ue-asset-path-replace](pages/ue-asset-path-replace/SKILL.md)
   > 资产迁移后扫描并替换Lua/INI/C++/Python/CSV/JSON中的硬编码UE资产路径引用，支持从迁移记录或直接输入old/new路径对
@@ -139,6 +140,10 @@ tags:
 - [ue-bp-3c-migration-analysis](pages/ue-bp-3c-migration-analysis/SKILL.md)
   > 分析UE Blueprint资产迁移至通用3C仓库的全景方案，输出结构化Markdown文档。覆盖继承链、组件构成、出入向资产依赖、Lua代码引用、迁移决策
   `OpenClaw` · `UE Editor MCP` | `Python` · `Lua`
+
+- [ue-lua-rebind](pages/ue-lua-rebind/SKILL.md)
+  > Widget Blueprint资产迁移后换绑Lua脚本路径。检查UIWndNameToLuaPath配置和BP View属性，验证SDK脚本存在性，通过UE 
+  `OpenClaw` · `UE Editor MCP` | `Lua`
 
 ### 通用（2 个）
 
