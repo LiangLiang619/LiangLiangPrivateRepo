@@ -1,6 +1,6 @@
 ---
 title: "【元梦之星】【LiteProject】解除 System 仓库对大厅仓库的依赖"
-status: "Not started"
+status: "Done"
 priority: "High"
 priority_num: 3
 task_type:
@@ -9,15 +9,15 @@ effort: "Large"
 due: 2026-04-27
 summary: "解除 System 仓库对大厅仓库的依赖，4/27 开始联调"
 created: 2026-04-24
-updated: 2026-04-24
+updated: 2026-05-07
 notion_url: "https://www.notion.so/LiteProject-System-34c5f1d3510d81728c79dcd0e3284014"
 ---
 
-# ⬜ 🔴 【元梦之星】【LiteProject】解除 System 仓库对大厅仓库的依赖
+# ✅ 🔴 【元梦之星】【LiteProject】解除 System 仓库对大厅仓库的依赖
 
 | 字段 | 值 |
 |---|---|
-| **状态** | ⬜ Not started |
+| **状态** | ✅ Done |
 | **优先级** | 🔴 High |
 | **类型** | 💬 Feature request |
 | **工作量** | Large |
