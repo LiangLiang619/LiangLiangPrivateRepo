@@ -7,17 +7,18 @@ tags:
 
 # ✅ 亮亮的待办
 
-> Notion 为主数据源 · 最后同步：2026-05-14 20:12
+> Notion 为主数据源 · 最后同步：2026-05-14 20:15
 
 ---
 
-## 📋 未完成（7 项）
+## 📋 未完成（8 项）
 
 | 标题 | 优先级 | 状态 | 类型 | 工作量 | 截止日期 |
 |---|---|---|---|---|---|
 | [【AssetNameMapping】相关代码合回 develop 分支](pages/AssetNameMapping-相关代码合回-develop-分支.md) | 🔴 High | 🔄 In progress | - | - | 2026-05-01 |
 | [将develop_sdk分支上提交的资产迁移操作合并至develop_shadow分支以及develop分支](pages/将develop_sdk分支上提交的资产迁移操作合并至develop_shadow分支以及develop分支.md) | 🔴 High | 🔄 In progress | 💅 Polish | Medium | - |
 | [savedata相关代码合入 dev 和 projectt 分支（需等前置依赖处理完毕合入后我再合入），并安排QA进行专项测试](pages/savedata相关代码合入-dev-和-projectt-分支-需等前置依赖处理完毕合入后我再合入-，并安排QA进行专项测试.md) | 🔴 High | 🔄 In progress | - | - | - |
+| [提单冒烟 3C 相关功能](pages/提单冒烟-3C-相关功能.md) | 🟡 Medium | ⬜ Not started | 💬 Feature request | - | - |
 | [推美术同学拆分 animation 仓库](pages/推美术同学拆分-animation-仓库.md) | 🟢 Low | ⬜ Not started | 💬 Feature request | - | - |
 | [ini配置隔离方案](pages/ini配置隔离方案.md) | 🟢 Low | ⬜ Not started | - | - | - |
 | [Fonts字体仓挪回到LetsGo仓库，并变成一个独立仓](pages/Fonts字体仓挪回到LetsGo仓库，并变成一个独立仓.md) | 🟢 Low | 🔄 In progress | - | - | - |
