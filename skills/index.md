@@ -6,7 +6,7 @@ tags:
 
 # 🧠 Skills 索引
 
-> Notion 为主数据源 · Obsidian 为镜像 · 共 24 个 Skill
+> Notion 为主数据源 · Obsidian 为镜像 · 共 25 个 Skill
 
 ## 📋 全部 Skills
 
@@ -30,6 +30,7 @@ tags:
 | [replace-shortpath-to-longpath](pages/replace-shortpath-to-longpath/SKILL.md) | 两阶段长路径迁移：① Python 扫描脚本扫全量 wiki 接口调用，输出带 arg_expres… | 长路径迁移 / Lua代码扫描 / 资产路径替换 | OpenClaw | Python / Lua | 2026-04-27 |
 | [screenshot](pages/screenshot/SKILL.md) | 多平台截图最佳实践，覆盖 macOS/Linux/Windows/iOS Simulator/Pla… | 通用 | OpenClaw | - | 2026-04-22 |
 | [self-improving-agent](pages/self-improving-agent/SKILL.md) | 记录错误/经验到 .learnings/ 文件，持续自我改进，自动晋升经验到 AGENTS.md/S… | 知识管理 / 通用 | OpenClaw | - | 2026-04-22 |
+| [ue-3c-asset-migration](pages/ue-3c-asset-migration/SKILL.md) | 执行 UE 3C 资产搬迁，从 /Game/LetsGo 或 /Game/Feature 迁移到 /… | 资产迁移 / 3C仓库搬迁 | OpenClaw / UE Editor MCP | Python | 2026-05-14 |
 | [ue-asset-migration](pages/ue-asset-migration/SKILL.md) | 通过 UE Editor MCP 将 /Content/LetsGo 或 /Content/Feat… | UE资产迁移 / SDK资产迁移 | OpenClaw / UE Editor MCP | Python | 2026-04-29 |
 | [ue-asset-path-replace](pages/ue-asset-path-replace/SKILL.md) | 资产迁移后扫描并替换Lua/INI/C++/Python/CSV/JSON中的硬编码UE资产路径引用… | 资产迁移 / 路径替换 / 代码扫描 | OpenClaw | Lua / C++ / Python | 2026-05-09 |
 | [ue-bp-3c-migration-analysis](pages/ue-bp-3c-migration-analysis/SKILL.md) | 分析UE Blueprint资产迁移至通用3C仓库的全景方案，输出结构化Markdown文档。覆盖继… | 资产迁移 / 3C仓库 / Blueprint分析 | OpenClaw / UE Editor MCP | Python / Lua | 2026-05-09 |
@@ -131,7 +132,11 @@ tags:
   > Notion 主数据源 + Obsidian/GitHub 镜像双端同步工作流。支持记笔记、记待办、同步索引，维护 notes/pages/ 和 todos/p
   `Python` · `Notion API` · `Git`
 
-### 资产迁移（3 个）
+### 资产迁移（4 个）
+
+- [ue-3c-asset-migration](pages/ue-3c-asset-migration/SKILL.md)
+  > 执行 UE 3C 资产搬迁，从 /Game/LetsGo 或 /Game/Feature 迁移到 /Game/LetsGo3C，基于路径映射 CSV，通过 UE
+  `OpenClaw` · `UE Editor MCP` | `Python`
 
 - [ue-asset-path-replace](pages/ue-asset-path-replace/SKILL.md)
   > 资产迁移后扫描并替换Lua/INI/C++/Python/CSV/JSON中的硬编码UE资产路径引用，支持从迁移记录或直接输入old/new路径对
