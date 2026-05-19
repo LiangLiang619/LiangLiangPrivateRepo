@@ -7,15 +7,16 @@ tags:
 
 # ✅ 亮亮的待办
 
-> Notion 为主数据源 · 最后同步：2026-05-19 19:41
+> Notion 为主数据源 · 最后同步：2026-05-19 20:34
 
 ---
 
-## 📋 未完成（13 项）
+## 📋 未完成（14 项）
 
 | 标题 | 优先级 | 状态 | 类型 | 工作量 | 截止日期 |
 |---|---|---|---|---|---|
 | [【AssetNameMapping】相关代码合回 develop 分支](pages/AssetNameMapping-相关代码合回-develop-分支.md) | 🔴 High | 🔄 In progress | - | - | 2026-05-01 |
+| [25???????????SaveData ??AssetNameMapping](pages/25-SaveData-AssetNameMapping.md) | 🔴 High | ⬜ Not started | - | - | 2026-05-25 |
 | [SaveData 修复合入 SDK](pages/SaveData-修复合入-SDK.md) | 🔴 High | ⬜ Not started | - | - | - |
 | [AssetNameMapping 及 SaveData 合入 SDK 和 ProjectT](pages/AssetNameMapping-及-SaveData-合入-SDK-和-ProjectT.md) | 🔴 High | ⬜ Not started | 💬 Feature request | Medium | - |
 | [资产合入PT](pages/资产合入PT.md) | 🔴 High | ⬜ Not started | 💬 Feature request | Medium | - |
