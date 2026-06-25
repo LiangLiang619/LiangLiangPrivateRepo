@@ -64,7 +64,7 @@ description: >-
 6. `##### 6. 使用范围`
 7. `##### 7. 迁移判断`
 
-各小节必填内容、固定背景文、资产列表示例、**四、方案总结**表头与迁移决策树见 [bp-migration-template.md](bp-migration-template.md)。
+各小节必填内容、固定背景文、资产列表示例、**四、方案总结**表头与迁移决策树见 [bp-migration-template.md](./bp-migration-template.md)。
 
 ## 执行流程
 
@@ -98,4 +98,4 @@ description: >-
 
 ## 详细规范
 
-- 完整章节模板、固定「一、背景」原文、各小节细则与决策树：[bp-migration-template.md](bp-migration-template.md)
+- 完整章节模板、固定「一、背景」原文、各小节细则与决策树：[bp-migration-template.md](./bp-migration-template.md)
