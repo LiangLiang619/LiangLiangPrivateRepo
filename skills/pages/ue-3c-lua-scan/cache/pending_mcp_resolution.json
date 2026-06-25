@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "instructions": "For each pending BP, call user-ue-editor-mcp action 'graph.describe' with blueprint_name=<asset_pkg_path> and graph_name='GetModuleName'. Pipe the response into parse_describe_response() and assemble resolved_module_paths.json with shape: [ { 'asset_short_name': '...', 'resolved_module': '...' or None } ]. Then pass --apply-mcp-result <path> to scan_3c_lua_bindings.py.",
+  "pending": [
+    {
+      "asset_short_name": "BP_MoeAblAbilityInstanceBase",
+      "asset_pkg_path": "/Game/LetsGo/Blueprints/GameplayAbility/CommonGA/BP_MoeAblAbilityInstanceBase",
+      "resolver_hint": "未识别 resolver"
+    },
+    {
+      "asset_short_name": "BP_MainCharChineseDragonComponent",
+      "asset_pkg_path": "/Game/LetsGo/MainGame/Blueprints/Character/BP_MainCharChineseDragonComponent",
+      "resolver_hint": "未识别 resolver"
+    }
+  ]
+}
