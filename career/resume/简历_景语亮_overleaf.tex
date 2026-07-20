@@ -1,0 +1,173 @@
+% 本版本使用 pdfLaTeX 编译，无需切换 XeLaTeX
+% Overleaf 默认编译器 pdfLaTeX 即可直接运行
+
+\documentclass[a4paper, 10.5pt]{article}
+
+% ── 中文支持（pdfLaTeX 兼容）────────────────────────────────────
+\usepackage{CJKutf8}
+
+% ── 页面 ────────────────────────────────────────────────────────
+\usepackage[top=1.1cm, bottom=1.1cm, left=1.2cm, right=1.2cm]{geometry}
+
+% ── 行距（放宽，缓解拥挤）──────────────────────────────────────────
+\linespread{1.2}
+
+% ── 颜色 & 链接 ─────────────────────────────────────────────────
+\usepackage{xcolor}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, urlcolor=black, linkcolor=black}
+
+% ── 排版工具 ────────────────────────────────────────────────────
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{tabularx}
+
+% ── 全局间距 ────────────────────────────────────────────────────
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+% ── 节标题 ──────────────────────────────────────────────────────
+\titleformat{\section}
+  {\normalsize\bfseries}{}
+  {0pt}{}
+  [\vspace{1pt}\rule{\linewidth}{0.6pt}\vspace{2pt}]
+\titlespacing*{\section}{0pt}{6pt}{3pt}
+
+% ── 词条头部命令 ─────────────────────────────────────────────────
+\newcommand{\entryhead}[3]{%
+  \noindent
+  \begin{tabularx}{\linewidth}{@{}X r@{}}
+    \textbf{#1}\enspace #2 & \small\textcolor{gray}{#3}
+  \end{tabularx}\vspace{1pt}}
+
+\newcommand{\entryheadsingle}[2]{%
+  \noindent
+  \begin{tabularx}{\linewidth}{@{}X r@{}}
+    \textbf{#1} & \small\textcolor{gray}{#2}
+  \end{tabularx}\vspace{1pt}}
+
+% ── 列表 ────────────────────────────────────────────────────────
+\setlist[itemize]{
+  leftmargin=1.4em, topsep=1pt, itemsep=1pt, parsep=0pt,
+  label=\textbullet}
+
+% ════════════════════════════════════════════════════════════════
+\begin{document}
+\begin{CJK}{UTF8}{gbsn}   % gbsn = 宋体，Overleaf 内置
+
+% ─── 姓名 & 联系方式 ─────────────────────────────────────────────
+\begin{center}
+  {\LARGE\bfseries 景语亮}\\[4pt]
+  \small
+  邮箱：\href{mailto:yuliang_jing19@163.com}{yuliang\_jing19@163.com}
+  \enspace|\enspace 电话：(+86)~159-6262-8827
+  \enspace|\enspace 求职意向：游戏客户端（Gameplay）开发工程师
+\end{center}
+
+% ─── 教育经历 ─────────────────────────────────────────────────────
+\section{教育经历}
+
+\small
+\entryheadsingle{卡内基梅隆大学（CMU）}{匹兹堡，美国}
+\begin{itemize}
+  \item 理学硕士，电子与计算机工程 -- 人工智能工程，\textbf{GPA: 3.67/4}
+        \hfill \textcolor{gray}{2023.08 -- 2024.12}
+\end{itemize}
+核心课程：计算机系统导论（CSAPP）、软件构建原则（对象 / 设计与并发）、
+        深度学习导论、机器学习与人工智能系统的工具链
+
+\vspace{3pt}
+
+\entryheadsingle{西交利物浦大学（XJTLU）/ 利物浦大学（UOL）}{苏州，中国 / 利物浦，英国}
+\begin{itemize}
+  \item 理学学士，信息与计算机科学（XJTLU）/ 计算机科学 -- 人工智能（UOL），\textbf{GPA: 3.86/4}
+        \hfill \textcolor{gray}{2019.08 -- 2023.06}
+\end{itemize}
+核心课程：软件工程、高级面向对象 C 语言、C 的原理及内存管理、Java 编程、
+数据结构、算法、操作系统、计算机系统、数据库
+
+% ─── 工作经历 ─────────────────────────────────────────────────────
+\section{工作经历}
+
+\entryhead{腾讯 · 天美T1工作室群}{《元梦之星》\quad 游戏客户端开发}{2024.05 - 2024.08 (实习) / 2025.02 -- 至今}
+
+\small
+《元梦之星》是腾讯天美工作室群基于\textbf{虚幻4引擎（C++ / Lua）}开发的派对社交手游，
+
+\begin{itemize}
+  \item \textbf{大厅广场活动全流程独立交付}（需求拆分 $\rightarrow$ 前后端联调 $\rightarrow$ 上线热更）：
+        独立 / 主导交付熊出没二周年、喜羊羊春节、斗罗大陆、黄油小熊等多个大型 IP 联动广场，
+        技术覆盖 \textbf{3C 角色动作状态与动画、网络同步、NPC 行为决策}等多个模块。
+        \begin{itemize}[leftmargin=1.4em, topsep=1pt, label=$\circ$]
+          \item \textbf{喜羊羊春节广场}：设计\textbf{可继承扩展的通用射击道具框架}（含可复用子弹对象池），制作射击变身道具；
+                \textbf{平底锅道具}实现 \textbf{DS 权威双路命中}（打他人 / 打自身）+ 四阶段受击状态机
+                （气泡 / 动画蓝图驱动二头身 / 眩晕 / Mesh 压扁拍扁）。
+                年夜饭吃饭比赛（独占交互椅子组件 + 变身道具）。
+          \item \textbf{熊出没二周年广场}：设计 \textbf{DS 权威 NPC 状态机}（互斥表防演出被提交打断）与
+                \textbf{时间戳驱动的演出进度对齐}（DS 重启续播、中途进场 / 切后台跳帧对齐 LevelSequence 与 Wwise 音效）；
+                沉淀 GM 调试指令套件加速多端联调。
+          \item \textbf{斗罗大陆广场}：实现武魂觉醒双人社交互动、蓝银草技能\textbf{优先级决策树 + 双向保底概率}、
+                NPC 双层表演调度与 CCD 持久化限频引导系统。
+          \item \textbf{黄油小熊国庆广场}：负责 GP + DS 全链路，设计并落地\textbf{通用可扩展、可配置的NPC/玩家走秀系统}——
+                支持策划自由配置走秀\textbf{点位、动画、服装、速度与各阶段时长}，以一套\textbf{三段式走秀状态机}
+                （进场 / 定点表演 / 退场）统一驱动 NPC / 黄油小熊 / 玩家；底层沉淀\textbf{通用节日行走动画机制}
+                （C++ 层运行时热替换角色移动 BlendSpace，最高优先生效），并实现 DS 权威上台准入并发锁与喝彩 $\rightarrow$ 三档舞台特效闭环。
+        \end{itemize}
+
+  \item \textbf{元梦通用基建 / 3C 仓库解耦搬迁}：
+        将 3C 及通用模块从主仓库解耦独立，制定\textbf{资产跨仓库搬迁总方案}。
+        负责通用基建仓库资产及 3C 仓库\textbf{代码与资产}的解耦搬迁。
+        \textbf{基于Skill + MCP搭建代码/资产迁移自动化工作流}：AI 执行分析、文档、搬迁、校验全链路，人工仅做方案决策。
+
+  \item \textbf{游戏商品开发}（特效装扮·环绕物 + 跟宠背包系统）：
+        \begin{itemize}[leftmargin=1.4em, topsep=1pt, label=$\circ$]
+          \item \textbf{特效装扮·环绕物}：集成角色状态机（ActionState/MotionState）控制表现显隐、多端同步与资源分包全链路，
+          设计性能预算上限保底机制。主导\textbf{性能重构}：以\textbf{自研 C++ 跟随组件}（变速追及）驱动骨骼 Mesh 替代常驻粒子，环绕轨迹由 AnimTransformCurve 离线烘焙、运行时采样叠加。
+          \item \textbf{宠物系统}：以\textbf{行为树}实现宠物跟随 / 闲逛 / 睡眠 / 特殊 / 瞬移 / 表演行为；背包侧实现宠物皮肤与焕彩展示界面，打通跨项目数据流与分包下载。
+        \end{itemize}
+\end{itemize}
+
+% ─── 项目与竞赛经历 ───────────────────────────────────────────────
+\section{项目与竞赛经历}
+
+\entryheadsingle{《Limitless》 · 2024 CIGA Game Jam SEEDO 站点 \textbf{第一名}}{2024.07\quad 上海}
+
+\small
+基于 Unity 开发的 3D 机甲跑酷音游。主要负责角色操控系统（三轨道横向切换、跳跃、攻击）
+,以及机甲对障碍物 / Boss 的碰撞检测及交互逻辑。
+
+\vspace{3pt}
+
+\entryheadsingle{《Fable Town（童话镇）》 · 西交利物浦大学 Unity 游戏开发竞赛 \textbf{冠军}}{2021.07\quad 苏州}
+
+\small
+结合即时战斗与回合制战斗的第三人称开放世界 RPG（Unity）。主要负责玩家行为控制系统
+（移动 / 跳跃 / 攻击）、NPC 行为逻辑（巡逻 / 追踪 / 对话）、
+回合制战斗（动作 / 特效 / 音效）、存档系统与战斗场景构建。
+
+\vspace{3pt}
+
+\entryheadsingle{基于手部追踪的混合现实中国针灸培训系统}{2022.05 -- 2022.11\quad 苏州}
+
+\small
+基于 Mixed Reality Toolkit 与 HoloLens~2，在 Unity 中开发手势追踪针灸交互系统，
+含实时针灸精度检测、可交互 3D 人体模型、任务与问答系统；
+并完整移植至 VR Interaction Framework + Meta Quest~2 平台，拓展应用场景。
+
+% ─── 专业技能 ─────────────────────────────────────────────────────
+\section{专业技能}
+
+\small
+\begin{itemize}
+  \item \textbf{游戏引擎 / 框架}：UE4（Gameplay、动画蓝图 / 状态机、网络同步、性能优化）、
+        UnLua、Unity、Mixed Reality Toolkit、VR Interaction Framework
+  \item \textbf{编程语言}：C++、Lua、C\#、Python、Java、TypeScript
+  \item \textbf{游戏客户端技术}：Gameplay 系统设计、组件化架构、动画与状态融合、
+        网络同步（RPC / Replication / dead-reckoning）、对象池与内存优化、
+        资源分包与包体优化、大型项目架构解耦
+  \item \textbf{工程与工具}：Git、GDB、Docker、GCP / AWS、CI（GitHub Actions）；
+        面向对象与设计模式、单元 / 集成测试
+\end{itemize}
+
+\end{CJK}
+\end{document}

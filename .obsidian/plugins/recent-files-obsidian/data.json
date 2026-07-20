@@ -5,6 +5,10 @@
       "path": "skills/index.md"
     },
     {
+      "basename": "SKILL",
+      "path": "skills/pages/agent-knowledge/SKILL.md"
+    },
+    {
       "basename": "index",
       "path": "rules/index.md"
     },

@@ -1,0 +1,158 @@
+% 本版本使用 pdfLaTeX 编译，无需切换 XeLaTeX
+% Overleaf 默认编译器 pdfLaTeX 即可直接运行
+
+\documentclass[a4paper, 10.5pt]{article}
+
+% ── 中文支持（pdfLaTeX 兼容）────────────────────────────────────
+\usepackage{CJKutf8}
+
+% ── 页面 ────────────────────────────────────────────────────────
+\usepackage[top=1.5cm, bottom=1.5cm, left=1.8cm, right=1.8cm]{geometry}
+
+% ── 颜色 & 链接 ─────────────────────────────────────────────────
+\usepackage{xcolor}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, urlcolor=black, linkcolor=black}
+
+% ── 排版工具 ────────────────────────────────────────────────────
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{tabularx}
+
+% ── 全局间距 ────────────────────────────────────────────────────
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+% ── 节标题 ──────────────────────────────────────────────────────
+\titleformat{\section}
+  {\normalsize\bfseries}{}
+  {0pt}{}
+  [\vspace{1pt}\rule{\linewidth}{0.6pt}\vspace{3pt}]
+\titlespacing*{\section}{0pt}{10pt}{4pt}
+
+% ── 词条头部命令 ─────────────────────────────────────────────────
+\newcommand{\entryhead}[3]{%
+  \noindent
+  \begin{tabularx}{\linewidth}{@{}X r@{}}
+    \textbf{#1}\enspace #2 & \small\textcolor{gray}{#3}
+  \end{tabularx}\vspace{1pt}}
+
+\newcommand{\entryheadsingle}[2]{%
+  \noindent
+  \begin{tabularx}{\linewidth}{@{}X r@{}}
+    \textbf{#1} & \small\textcolor{gray}{#2}
+  \end{tabularx}\vspace{1pt}}
+
+% ── 列表 ────────────────────────────────────────────────────────
+\setlist[itemize]{
+  leftmargin=1.5em, topsep=2pt, itemsep=1.5pt, parsep=0pt,
+  label=\textbullet}
+
+% ════════════════════════════════════════════════════════════════
+\begin{document}
+\begin{CJK}{UTF8}{gbsn}   % gbsn = 宋体，Overleaf 内置
+
+% ─── 姓名 & 联系方式 ─────────────────────────────────────────────
+\begin{center}
+  {\Large\bfseries\begin{CJK}{UTF8}{gkai}景语亮\end{CJK}}\\[4pt]
+  \small
+  邮箱：\href{mailto:yuliang_jing19@163.com}{yuliang\_jing19@163.com}
+  \enspace|\enspace 电话：(+86)~159-6262-8827
+  \enspace|\enspace 求职意向：游戏客户端（Gameplay）开发工程师
+\end{center}
+
+\vspace{2pt}
+
+% ─── 教育经历 ─────────────────────────────────────────────────────
+\section{教育经历}
+
+\small
+\entryheadsingle{卡内基梅隆大学（CMU）}{匹兹堡，美国}
+\begin{itemize}
+  \item 理学硕士，电子与计算机工程 -- 人工智能工程，\textbf{GPA: 3.67/4}
+        \hfill \textcolor{gray}{2023.08 -- 2024.12}
+\end{itemize}
+核心课程：计算机系统导论（CSAPP）、软件构建原则（对象 / 设计与并发）、
+深度学习导论、机器学习与人工智能系统的工具链
+
+\vspace{5pt}
+
+\entryheadsingle{西交利物浦大学（XJTLU）/ 利物浦大学（UOL）}{苏州，中国 / 利物浦，英国}
+\begin{itemize}
+  \item 理学学士，信息与计算机科学（XJTLU）/ 计算机科学 -- 人工智能（UOL），\textbf{GPA: 3.86/4}
+        \hfill \textcolor{gray}{2019.08 -- 2023.06}
+\end{itemize}
+核心课程：软件工程、高级面向对象 C 语言、C 的原理及内存管理、Java 编程、
+数据结构、算法、操作系统、计算机系统、数据库
+
+% ─── 工作经历 ─────────────────────────────────────────────────────
+\section{工作经历}
+
+\entryhead{腾讯 · 天美T1工作室群}{《元梦之星》\quad 游戏客户端开发}{2024.06 - 2024.09 (实习) / 2025.02 -- 至今}
+
+\small
+《元梦之星》是腾讯天美工作室群基于\textbf{虚幻4引擎（C++ / Lua）}开发的派对社交手游，
+
+\begin{itemize}
+  \item \textbf{大厅广场活动全流程独立交付}：
+        交付熊出没周年庆、斗罗大陆、黄油小熊、喜羊羊春节等多个大型 IP 联动广场
+        （需求拆分 $\rightarrow$ 前后端联调 $\rightarrow$ 上线热更），
+        沉淀射击道具框架、通用交互玩具状态基类等通用模块。
+        技术覆盖 \textbf{3C 角色动作状态与动画、网络同步、NPC 行为决策}等多个模块。
+
+  \item \textbf{元梦通用基建 / 3C 仓库解耦搬迁}：
+        将 3C 及通用模块从主仓库解耦独立，制定\textbf{资产跨仓库搬迁总方案}。
+        负责通用基建仓库资产及 3C 仓库\textbf{代码与资产}的解耦搬迁。
+        \textbf{基于Skill + MCP搭建代码/资产迁移自动化工作流}：AI 执行分析、文档、搬迁、校验全链路，人工仅做方案决策。
+
+  \item \textbf{游戏商品环绕物开发}：
+        集成角色状态机（ActionState/MotionState）控制表现显隐、多端同步与资源分包全链路，
+        设计性能预算上限保底机制。
+        主导\textbf{性能重构}：以\textbf{自研 C++ 跟随组件}（变速追及）驱动骨骼 Mesh
+        替代常驻粒子，环绕轨迹由 AnimTransformCurve 离线烘焙、运行时采样叠加。
+\end{itemize}
+
+% ─── 项目与竞赛经历 ───────────────────────────────────────────────
+\section{项目与竞赛经历}
+
+\entryheadsingle{《Limitless》 · 2024 CIGA Game Jam SEEDO 站点 \textbf{第一名}}{2024.07\quad 上海}
+
+\small
+基于 Unity 开发的 3D 机甲跑酷音游。主要负责角色操控系统（三轨道横向切换、跳跃、攻击）
+与机甲对障碍物 / Boss 的碰撞检测及交互逻辑。
+
+\vspace{5pt}
+
+\entryheadsingle{《Fable Town（童话镇）》 · 西交利物浦大学 Unity 游戏开发竞赛 \textbf{冠军}}{2021.07\quad 苏州}
+
+\small
+结合即时战斗与回合制战斗的第三人称开放世界 RPG（Unity）。主要负责玩家行为控制系统
+（移动 / 跳跃 / 攻击）、NPC 行为逻辑（巡逻 / 追踪 / 对话）、
+回合制战斗（动作 / 特效 / 音效）、存档系统与战斗场景构建。
+
+\vspace{5pt}
+
+\entryheadsingle{基于手部追踪的混合现实中国针灸培训系统}{2022.05 -- 2022.11\quad 苏州}
+
+\small
+基于 Mixed Reality Toolkit 与 HoloLens~2，在 Unity 中开发手势追踪针灸交互系统，
+含实时针灸精度检测、可交互 3D 人体模型、任务与问答系统；
+并完整移植至 VR Interaction Framework + Meta Quest~2 平台，拓展应用场景。
+
+% ─── 专业技能 ─────────────────────────────────────────────────────
+\section{专业技能}
+
+\small
+\begin{itemize}
+  \item \textbf{游戏引擎 / 框架}：UE4（Gameplay、动画蓝图 / 状态机、网络同步、性能优化）、
+        UnLua、Unity、Mixed Reality Toolkit、VR Interaction Framework
+  \item \textbf{编程语言}：C++、Lua、C\#、Python、Java、TypeScript
+  \item \textbf{游戏客户端技术}：Gameplay 系统设计、组件化架构、动画与状态融合、
+        网络同步（RPC / Replication / dead-reckoning）、对象池与内存优化、
+        资源分包与包体优化、大型项目架构解耦
+  \item \textbf{工程与工具}：Git、GDB、Docker、GCP / AWS、CI（GitHub Actions）；
+        面向对象与设计模式、单元 / 集成测试
+\end{itemize}
+
+\end{CJK}
+\end{document}
