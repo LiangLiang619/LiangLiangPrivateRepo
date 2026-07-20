@@ -106,8 +106,8 @@
                 \textbf{时间戳驱动的演出进度对齐}（DS 重启续播、中途进场 / 切后台跳帧对齐 LevelSequence 与 Wwise 音效）；
                 沉淀 GM 调试指令套件加速多端联调。
           \item \textbf{黄油小熊国庆广场}：设计并落地\textbf{通用可扩展、可配置的NPC/玩家走秀系统}——
-                支持策划自由配置走秀\textbf{点位、动画、服装、速度与各阶段时长}；底层沉淀\textbf{通用节日行走动画机制}
-                （C++ 层运行时热替换角色移动 BlendSpace，最高优先生效），并实现 DS 权威上台准入并发锁与喝彩 $\rightarrow$ 三档舞台特效闭环。
+                支持策划自由配置走秀\textbf{时间、点位、动画、服装、速度与各阶段时长}；走秀时替换动画蓝图的移动BlendSpace，替换专属T台走姿
+                ，并打通玩家上台排队、观众喝彩与舞台特效联动等完整互动流程。开发黄油小熊NPC，支持NPC邀请，寻路，双人动作互动以及特殊运镜等。
         \end{itemize}
 
   \item \textbf{元梦通用基建 / 3C 仓库解耦搬迁}：
@@ -157,14 +157,8 @@
 
 \small
 \begin{itemize}
-  \item \textbf{游戏引擎 / 框架}：UE4（Gameplay、动画蓝图 / 状态机、网络同步、性能优化）、
-        UnLua、Unity、Mixed Reality Toolkit、VR Interaction Framework
-  \item \textbf{编程语言}：C++、Lua、C\#、Python、Java、TypeScript
-  \item \textbf{游戏客户端技术}：Gameplay 系统设计、组件化架构、动画与状态融合、
-        网络同步（RPC / Replication / dead-reckoning）、对象池与内存优化、
-        资源分包与包体优化、大型项目架构解耦
-  \item \textbf{工程与工具}：Git、GDB、Docker、GCP / AWS、CI（GitHub Actions）；
-        面向对象与设计模式、单元 / 集成测试
+  \item \textbf{游戏引擎 / 框架}：UE4、UnLua、Unity、Mixed Reality Toolkit、VR Interaction Framework
+  \item \textbf{编程语言}：C++、Lua、C\#、Python、Java
 \end{itemize}
 
 \end{CJK}
