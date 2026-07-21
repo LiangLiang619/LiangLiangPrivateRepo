@@ -98,14 +98,12 @@
         独立交付熊出没二周年、喜羊羊春节、斗罗大陆、黄油小熊等多个大型 IP 联动广场，
         技术覆盖 \textbf{3C 角色动作状态与动画、网络同步、NPC 行为决策}等多个模块。
         \begin{itemize}[leftmargin=1.4em, topsep=1pt, label=$\circ$]
-          \item \textbf{喜羊羊春节广场}：设计\textbf{可继承扩展的通用射击道具框架}（含可复用子弹对象池），制作射击变身道具；
-                \textbf{平底锅道具}支持击打他人与击打自身两路命中逻辑，
-                受击次数累积后逐级触发气泡提示、动画蓝图驱动的二头身、眩晕状态与 Mesh 压扁效果。
-          \item \textbf{黄油小熊国庆广场}：设计并落地\textbf{通用可扩展、可配置的NPC/玩家走秀系统}——
-                支持策划自由配置走秀\textbf{时间、点位、动画、服装、速度与各阶段时长}；走秀时替换动画蓝图的移动BlendSpace，替换专属T台走姿，
-                并打通玩家上台排队、观众喝彩与舞台特效联动等完整互动流程。开发黄油小熊NPC，支持NPC邀请，寻路，双人动作互动以及特殊运镜等。
-          \item \textbf{熊出没二周年广场}：DS管理NPC三态以及互斥，定时演出以服务器时间戳对齐进度，DS 重启与中途进场均从正确位置续播；
-          打通完整的烹饪流程（镜头切换、LevelSequence、霸体控制）并实现五类菜品对应道具效果（加速跑、变形、喷气背包、泡泡升空、全身变黑）。
+          \item \textbf{喜羊羊春节·射击框架}：设计\textbf{可继承扩展的通用射击道具框架}（含可复用子弹对象池），支撑射击变身等玩法快速接入。
+          \item \textbf{喜羊羊春节·平底锅道具}：实现击打他人 / 自身双路命中；受击累积逐级触发气泡、动画蓝图驱动的二头身、眩晕与 Mesh 压扁效果。
+          \item \textbf{黄油小熊国庆·走秀系统}：设计\textbf{通用可配置走秀系统}，策划可自定义时间 / 点位 / 动画 / 服装 / 速度 / 各阶段时长；运行时替换移动 BlendSpace 与专属 T 台走姿。
+          \item \textbf{黄油小熊国庆·互动与 NPC}：打通上台排队、观众喝彩、舞台特效联动全流程；开发黄油小熊 NPC（邀请 / 寻路 / 双人互动 / 专属运镜）。
+          \item \textbf{熊出没二周年·舞台演出}：DS 管理 NPC 三态与互斥，定时演出按服务器时间戳对齐；DS 重启 / 中途进场均从正确进度续播。
+          \item \textbf{熊出没二周年·烹饪玩法}：打通烹饪全流程（镜头切换 / LevelSequence / 霸体控制），实现五类菜品道具效果（加速 / 变形 / 喷气背包 / 泡泡升空 / 全身变黑）。
         \end{itemize}
 
   \item \textbf{元梦通用基建 / 3C 仓库解耦搬迁}：
@@ -115,8 +113,8 @@
 
   \item \textbf{游戏商品开发}（特效装扮·环绕物 + 手持物分包 + 跟宠背包系统）：
         \begin{itemize}[leftmargin=1.4em, topsep=1pt, label=$\circ$]
-          \item \textbf{特效装扮·环绕物}：集成角色状态机（ActionState/MotionState）控制表现显隐、多端同步与资源分包全链路，
-          设计性能预算上限保底机制。主导\textbf{性能重构}：以\textbf{自研 C++ 跟随组件}（变速追及）驱动骨骼 Mesh 替代常驻粒子，环绕轨迹由 AnimTransformCurve 离线烘焙、运行时采样叠加。
+          \item \textbf{环绕物}：集成角色状态机（ActionState / MotionState）控制显隐，打通多端同步与资源分包，设计性能预算保底机制。
+          \item \textbf{环绕物·性能重构}：以\textbf{自研 C++ 变速跟随组件}驱动骨骼 Mesh 替代常驻粒子，轨迹用 AnimTransformCurve 离线烘焙 + 运行时采样叠加。
           \item \textbf{手持物·放置物分包}：将召唤物的材质 / 动画 / 粒子分入运行时按需下载的 Pak，
                 主控端点击前置拦截、第三视角异步等待 + 回调重试两条独立路径。
           \item \textbf{宠物系统}：以\textbf{行为树}实现宠物跟随 / 闲逛 / 睡眠 / 特殊 / 瞬移 / 表演行为；背包侧实现宠物皮肤与焕彩更换、展示界面。
@@ -151,7 +149,7 @@
 \section{专业技能}
 
 \begin{itemize}
-  \item \textbf{游戏引擎 / 框架}：UE4、UnLua、Unity、Mixed Reality Toolkit、VR Interaction Framework
+  \item \textbf{游戏开发工具}：UE4、UnLua、Unity、Unreal Insights、Mixed Reality Toolkit、VR Interaction Framework
   \item \textbf{编程语言}：C++、Lua、C\#、Python、Java
 \end{itemize}
 
