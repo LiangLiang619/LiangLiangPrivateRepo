@@ -61,7 +61,7 @@
   \small
   邮箱：\href{mailto:yuliang_jing19@163.com}{yuliang\_jing19@163.com}
   \enspace|\enspace 电话：(+86)~159-6262-8827
-  \enspace|\enspace 求职意向：游戏客户端（Gameplay）开发工程师
+  \enspace|\enspace 求职意向：游戏客户端开发
 \end{center}
 
 % ─── 教育经历 ─────────────────────────────────────────────────────
@@ -116,7 +116,7 @@
 
   \item \textbf{性能优化专项}：
         \begin{itemize}[leftmargin=1.4em, topsep=1pt, label=$\circ$]
-          \item \textbf{启动登录耗时}：基于 Trace 定位大厅进场热点，通过流式关卡\textbf{分批加载}（核心集同步 Flush / 非核心异步补齐）与预热资产\textbf{延迟启动 + 分帧摊销}，消除 GameThread 同步阻塞峰值。
+          \item \textbf{启动登录耗时}：基于 Trace 定位游戏启动大厅性能热点，通过流式关卡\textbf{分批加载}（核心关卡同步 Flush / 非核心延迟异步加载）与预加载资产\textbf{延迟启动 + 分帧摊销}，避免单帧阻塞 GameThread。
           \item \textbf{同屏性能上限}：设计\textbf{通用同屏性能上限组件}，为各类道具配置性能权重，场景内累计开销超限时自动拦截并提示。
         \end{itemize}
 
