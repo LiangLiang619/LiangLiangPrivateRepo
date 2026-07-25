@@ -98,27 +98,32 @@
         独立交付熊出没二周年、喜羊羊春节、斗罗大陆、黄油小熊等多个大型 IP 联动广场，
         技术覆盖 \textbf{3C 角色动作状态与动画、网络同步、NPC 行为决策}等多个模块。
         \begin{itemize}[leftmargin=1.4em, topsep=1pt, label=$\circ$]
-          \item \textbf{喜羊羊春节广场}：设计\textbf{可继承扩展的通用射击道具框架}（含可复用子弹对象池）；
-                实现道具\textbf{多段受击状态机}——\textbf{动画蓝图变量}驱动角色体型切换、\textbf{Buff + 角色属性修改}触发眩晕、
+          \item \textbf{喜羊羊春节广场}：设计\textbf{可继承扩展的通用射击道具框架}（含自研弹道模拟组件，子弹对象池）；
+                实现平底锅道具\textbf{多段受击状态机}——\textbf{动画蓝图变量}驱动角色体型切换、\textbf{Buff + 角色属性修改}触发眩晕、
                 运行时调整\textbf{模型缩放与物理}实现角色"压扁"。
-          \item \textbf{黄油小熊国庆广场}：主要实现了\textbf{多端同步的角色走秀}——\textbf{热替换动画蓝图移动 BlendSpace} 切换专属走姿
-                确保无滑步、支持\textbf{上下半身动画融合}；
-                \textbf{中途进场按服务器时间戳对齐演出进度续播}；NPC \textbf{纯客户端 spawn + 时间戳对齐}免 DS 复制、玩家上台走 \textbf{DS 权威准入}。
+          \item \textbf{黄油小熊国庆广场}：设计\textbf{多端同步的NPC/玩家走秀}——\textbf{热替换动画蓝图移动 BlendSpace} 切换专属走姿，确保无滑步并支持\textbf{上下半身动画融合}；
+                开发黄油小熊 NPC 互动：DS 权威选人发起邀请、寻路，多播广播全场双人动作，占用锁解决冲突。
           \item \textbf{熊出没二周年广场}：设计 \textbf{DS 权威 NPC 状态机}（三态互斥，保证演出/交互不冲突），定时演出以\textbf{服务器时间戳对齐}，
           \textbf{DS 重启与中途进场通过 LevelSequence 跳帧 + 音效 Seek 实现音画同步续播}；打通烹饪流程（\textbf{镜头切换 / LevelSequence / 霸体控制}）
           与多类食物道具的 \textbf{Buff 驱动效果}（变形、位移等）。
         \end{itemize}
 
   \item \textbf{元梦最小化游戏框架 · 副玩法隔离专项}：
-        为支撑"最小化游戏框架"——让新玩法团队以\textbf{最小仓库依赖、独立工程}快速起步——主导核心基座的解耦与建设：
-        将\textbf{"启动 $\rightarrow$ 登录 $\rightarrow$ 进入场景"全链路代码与资产}从主仓解耦进独立 \textbf{SDK 仓}，实现 \textbf{SDK 仓独立跑通启动登录全流程}；
-        通过\textbf{抽基类 + 继承 + Hook 注入}构建\textbf{可复用的通用 3C 基类仓库}供新玩法继承拓展；
-        并\textbf{基于 MCP + Skill 搭建代码/资产迁移自动化工作流}，人工仅做方案决策。
+        为让新玩法团队以\textbf{最小依赖、独立工程}快速起步——负责 \textbf{SDK 仓核心资产}的解耦迁移，
+        支撑"启动 $\rightarrow$ 登录 $\rightarrow$ 进入场景"链路在 \textbf{SDK 仓独立跑通}；负责 \textbf{3C 资产与代码}的解耦，
+        通过\textbf{抽基类 + 继承 + Hook} 沉淀\textbf{可复用的通用 3C 基类仓库}；
+        并\textbf{落地基于 MCP + Skill 的资产/代码迁移 AI 自动化工作流}，人工仅做方案决策。
+
+  \item \textbf{性能优化专项}：
+        \begin{itemize}[leftmargin=1.4em, topsep=1pt, label=$\circ$]
+          \item \textbf{启动登录耗时}：基于 Trace 定位大厅进场热点，通过流式关卡\textbf{分批加载}（核心集同步 Flush / 非核心异步补齐）与预热资产\textbf{延迟启动 + 分帧摊销}，消除 GameThread 同步阻塞峰值。
+          \item \textbf{同屏性能上限}：设计\textbf{通用同屏性能上限组件}，为各类道具配置性能权重，场景内累计开销超限时自动拦截并提示。
+        \end{itemize}
 
   \item \textbf{游戏商品开发}（特效装扮·环绕物 + 手持物分包 + 跟宠背包系统）：
         \begin{itemize}[leftmargin=1.4em, topsep=1pt, label=$\circ$]
-          \item \textbf{特效装扮·环绕物}：以\textbf{自研 C++ 跟随组件}（变速追及）驱动骨骼 Mesh 沿预制曲线环绕跟随角色，联动 ActionState/MotionState 控制显隐。
-          主导\textbf{性能重构}：轨迹由\textbf{离线预计算路径代替每帧粒子模拟}，视觉本体换骨骼 Mesh，辅以场景同屏上限性能保底；已被 3 个副玩法复用。
+          \item \textbf{特效装扮·环绕物}：以\textbf{自研 C++ 跟随组件}（变速追及）驱动骨骼 Mesh 沿预制曲线环绕跟随角色，联动 Action/MotionState 控制显隐。
+          主导\textbf{性能重构}：轨迹由\textbf{离线预计算路径代替每帧粒子模拟}，视觉本体换骨骼 Mesh，辅以场景同屏上限性能保底。
           \item \textbf{手持物·放置物分包}：将召唤物的材质 / 动画 / 粒子分入运行时按需下载的 Pak，
                 主控端点击前置拦截、第三视角异步等待 + 回调重试两条独立路径。
           \item \textbf{宠物系统}：以\textbf{行为树}实现宠物跟随 / 闲逛 / 睡眠 / 特殊 / 瞬移 / 表演行为；背包侧实现宠物皮肤与焕彩更换、展示界面。
